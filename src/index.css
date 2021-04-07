@@ -1,21 +1,22 @@
 body {
   background-color: black;
-  background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%
-  );
   height: 100vh;
   margin: 0;
   overflow: hidden;
   padding: 2rem;
   color: white;
   font: 1.3rem Inconsolata, monospace;
-  text-shadow: 0 0 5px #C8C8C8;
+
 }
 
 
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
 .terminal {
-    background: repeating-linear-gradient(rgba(black, 0.15), rgba(black, 0.15) 1px, transparent 1px, transparent 2px );
-    position: absolute;
+
     top: 0;
     left: 0;
     width: 100vw;
@@ -26,10 +27,19 @@ body {
 
 
 
-body::selection {
-  background: #0080FF;
-  text-shadow: none;
-}
 pre {
   margin: 0;
+}
+
+
+.header {
+  color: rgb(0, 128, 0);
+  padding-top: 7vh;
+  text-align: center;
+  font-size: 2.5em;
+  
+}
+
+.terminalUser {
+  color: rgb(0, 128, 0);
 }
