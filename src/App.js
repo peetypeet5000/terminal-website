@@ -5,6 +5,43 @@ import { render } from '@testing-library/react';
 import React from 'react';
 
 
+class Box extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      widthChars: [],
+      heightChars: []
+    };
+
+  }
+
+  getWidthChars = () => this.props.width / 8
+
+  getHeightChars = () => this.props.height / 8
+
+  setSizes() {
+    for(var i = 0; i < this.getWidthChars(); i++) {
+      this.state.widthChars.push('#')
+      console.log("woo")
+    }
+    for(var i = 0; i < this.getHeightChars(); i++) {
+      this.state.heightChars.push('#')
+    }
+  }
+
+
+  render() {
+    this.setSizes();
+    return (
+      <div>
+        <p>{this.state.widthChars}</p>
+      </div>
+    );
+  }
+}
+
+
 class Name extends React.Component {
   constructor(props) {
     super(props);
@@ -94,13 +131,33 @@ class Terminal extends React.Component {
 }
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      height: 0,
+      width: 0
+    };
+
+    window.addEventListener("resize", this.update);
+  }
+
+  componentDidMount() {
+    this.update();
+  }
+
+  update = () => {
+    this.setState({
+      height: window.innerHeight,
+      width: window.innerWidth
+    });
+  };
 
   render() {
     return (
       <div>
           <Header />
           <div>
-            <Terminal />
+            <Box width={this.state.width} height={this.state.height}/>
           </div>
         </div>
     );
