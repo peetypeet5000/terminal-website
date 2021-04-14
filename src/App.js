@@ -5,43 +5,7 @@ import { render } from '@testing-library/react';
 import React from 'react';
 
 
-class Box extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      widthChars: [],
-      heightChars: []
-    };
-
-  }
-
-  getWidthChars = () => this.props.width / 8
-
-  getHeightChars = () => this.props.height / 8
-
-  setSizes() {
-    for(var i = 0; i < this.getWidthChars(); i++) {
-      this.state.widthChars.push('#')
-      console.log("woo")
-    }
-    for(var i = 0; i < this.getHeightChars(); i++) {
-      this.state.heightChars.push('#')
-    }
-  }
-
-
-  render() {
-    this.setSizes();
-    return (
-      <div>
-        <p>{this.state.widthChars}</p>
-      </div>
-    );
-  }
-}
-
-
+//Renders text given in props one character at a time, like a terminal
 class Name extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +17,7 @@ class Name extends React.Component {
 
   componentDidMount() {
     this.timerID = setInterval(
-      () => this.addLetter(), 500
+      () => this.addLetter(), 200
     );
   }
 
@@ -119,16 +83,37 @@ class Header extends React.Component {
   }
 }
 
-class Terminal extends React.Component {
 
+class Menu extends React.Component {
   render() {
-    return (
-      <div className="terminal">
-        <pre><span className="terminalUser">peetypeet@peter-desktop~: </span>This is a terminal</pre>
+    return(
+      <div className="outer-menu-box">
+        <pre className="box-title">Main Menu</pre>
+        <div className="menu-box">
+          <Button name={"Button 1"} selected={true} />
+          <Button name={"Button 2"} />
+          <Button name={"Button 3"} />
+        </div>
       </div>
     );
   }
+
 }
+
+class Button extends React.Component {
+  render() {
+    if(this.props.selected == true) {
+      return (
+        <div className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+      );
+      } else {
+        return (
+          <div className="menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+        );
+      }
+  }
+}
+
 
 class App extends React.Component {
   constructor() {
@@ -155,11 +140,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-          <Header />
-          <div>
-            <Box width={this.state.width} height={this.state.height}/>
-          </div>
-        </div>
+        <Header />
+        <Menu />
+      </div>
     );
   }
 }
