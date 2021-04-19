@@ -85,12 +85,17 @@ class Header extends React.Component {
 
 
 class Menu extends React.Component {
+  constructor(props){
+    super(props)
+  }
+
+
   render() {
     return(
       <div className="outer-menu-box">
         <pre className="box-title">Main Menu</pre>
         <div className="menu-box">
-          <Button name={"Button 1"} selected={true} />
+          <Button name={"Button 1"} />
           <Button name={"Button 2"} />
           <Button name={"Button 3"} />
         </div>
@@ -101,16 +106,39 @@ class Menu extends React.Component {
 }
 
 class Button extends React.Component {
+  constructor(props) {
+    super(props);
+    this.isHover = this.isHover.bind(this);
+    this.state = {
+      hover: false
+    }
+  }
+
+  //needed to be bound in constructor
+  isHover() {
+    this.setState({
+      hover: true
+    });
+  }
+
+  //example of syntax with no bind
+  notHover = (event) => {
+    this.setState({
+      hover: false
+    });
+  }
+
+
   render() {
-    if(this.props.selected == true) {
+    if(this.state.hover == true) {
       return (
-        <div className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
       );
-      } else {
-        return (
-          <div className="menu-button" >This is a selectable line of text --- {this.props.name}!</div>
-        );
-      }
+    } else {
+      return(
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+      );
+    }
   }
 }
 
