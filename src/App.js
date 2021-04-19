@@ -89,15 +89,20 @@ class Menu extends React.Component {
     super(props)
   }
 
+  onClick = (event, id) => {
+    console.log(event);
+    console.log("Button", id, "Clicked")
+  }
+
 
   render() {
     return(
       <div className="outer-menu-box">
         <pre className="box-title">Main Menu</pre>
         <div className="menu-box">
-          <Button name={"Button 1"} />
-          <Button name={"Button 2"} />
-          <Button name={"Button 3"} />
+          <Button id={1} name={"Button 1"} onClick={this.onClick}/>
+          <Button id={2} name={"Button 2"} onClick={this.onClick}/>
+          <Button id={3} name={"Button 3"} onClick={this.onClick}/>
         </div>
       </div>
     );
@@ -132,7 +137,7 @@ class Button extends React.Component {
   render() {
     if(this.state.hover == true) {
       return (
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
       );
     } else {
       return(
