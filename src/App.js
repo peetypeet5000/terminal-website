@@ -3,6 +3,7 @@ import './App.css';
 import reactDom from 'react-dom';
 import { render } from '@testing-library/react';
 import React from 'react';
+import ResumeBody from './ResumeBody'
 
 
 //Renders text given in props one character at a time, like a terminal
@@ -148,6 +149,24 @@ class Button extends React.Component {
 }
 
 
+class Body extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      enabled: 'menu'
+    }
+  }
+  
+  render() {
+    return (
+      <div>
+        <Menu />
+      </div>
+    );
+  }
+}
+
+
 class App extends React.Component {
   constructor() {
     super();
@@ -175,6 +194,7 @@ class App extends React.Component {
       <div>
         <Header />
         <Menu />
+        <ResumeBody />
       </div>
     );
   }
