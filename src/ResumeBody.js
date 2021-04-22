@@ -1,5 +1,6 @@
 import React from 'react';
 import './ResumeBody.css'
+import { Button } from './App.js'
 
 export default class ResumeBody extends React.Component {
     render() {
@@ -63,6 +64,7 @@ export default class ResumeBody extends React.Component {
                     </div>
                     <br></br><br></br><br></br>
                 </div>
+                <Button id={'menu'} name={"Return to Main Menu"} onClick={this.props.onClick}/>
             </div>
         );
     }

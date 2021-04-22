@@ -27,8 +27,6 @@ class Name extends React.Component {
   }
 
   addLetter() {
-    console.log(this.state.n)
-
     //while we have not used all the text from props
     if(this.props.text.length + 1 > this.state.n) {
       
@@ -90,28 +88,21 @@ class Menu extends React.Component {
     super(props)
   }
 
-  onClick = (event, id) => {
-    console.log(event);
-    console.log("Button", id, "Clicked")
-  }
 
 
   render() {
     return(
-      <div className="outer-menu-box">
-        <pre className="box-title">Main Menu</pre>
-        <div className="menu-box">
-          <Button id={1} name={"Button 1"} onClick={this.onClick}/>
-          <Button id={2} name={"Button 2"} onClick={this.onClick}/>
-          <Button id={3} name={"Button 3"} onClick={this.onClick}/>
-        </div>
+      <div>
+        <Button id={'resume'} name={"Resume"} onClick={this.props.onClick}/>
+        <Button id={2} name={"Button 2"} onClick={this.props.onClick}/>
+        <Button id={3} name={"Button 3"} onClick={this.props.onClick}/>
       </div>
     );
   }
 
 }
 
-class Button extends React.Component {
+export class Button extends React.Component {
   constructor(props) {
     super(props);
     this.isHover = this.isHover.bind(this);
@@ -153,14 +144,52 @@ class Body extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      enabled: 'menu'
+      enabled: 'menu',
+      title: "Main Menu"
+    }
+    this.innerBoxContent = this.getElement();
+  }
+
+  //used to pass to Buttons as onClick function. Updates state with active component
+  menuOnClick = (event, id) => {
+    console.log("Button", id, "Clicked")
+    if (id === 'resume') {
+      this.setState({
+        enabled: 'resume',
+        title: 'Resume'
+      });
+    } else if (id === 'menu') {
+      this.setState({
+        enabled: 'menu',
+        title: 'Main Menu'
+      });
+    }
+
+  }
+
+  getElement() {
+    if (this.state.enabled == 'menu') {
+      return (
+        <div>
+          <Menu onClick={this.menuOnClick} />
+        </div>
+      );
+    } else if(this.state.enabled == 'resume') {
+      return (
+        <div>
+          <ResumeBody onClick={this.menuOnClick} />
+        </div>
+      );
     }
   }
   
   render() {
     return (
-      <div>
-        <Menu />
+      <div className="outer-menu-box">
+        <pre className="box-title">{this.state.title}</pre>
+        <div className="menu-box">
+          {this.getElement()}
+        </div>
       </div>
     );
   }
@@ -193,8 +222,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Menu />
-        <ResumeBody />
+        <Body />
       </div>
     );
   }

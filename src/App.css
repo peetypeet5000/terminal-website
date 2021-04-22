@@ -2,7 +2,6 @@ body {
   background-color: rgb(1, 0 , 171);
   height: 100vh;
   margin: 0;
-  overflow: hidden;
   padding: 2rem;
   color: black;
 
@@ -41,7 +40,7 @@ body {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
+  margin-top: 12vh;
   box-shadow: 15px 15px black;
   position: relative;
 }
@@ -61,6 +60,8 @@ body {
   top: -15px;
   padding-top: 0px;
   font-size: 1.2em;
-  right: 45%;
+  margin-left: auto;
+  text-align: center;
+  width: fit-content;
   
 }
