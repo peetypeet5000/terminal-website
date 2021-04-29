@@ -1,0 +1,27 @@
+[
+    {
+        "number": 1,
+        "projectTitle": "This Website",
+        "projectImage": "rpi.jpg",
+        "projectImageAlt": "Image of Raspberry Pi Server",
+        "projectDescription": "This website is running on a Raspberry Pi Model 3b. It is currently set up using a reverse-proxy nginx server, which is used to manage the SSL. Behind this proxy server is a couple node.js applications that serve all the website content. The content is served and templated using express and handlebars, respectively. As the raspberry pi is sitting on my home network, a dynamic DNS needed to be setup. To achive this, I used the DDNS built into Google Domains, as that is where my domain was purchased. A script runs on the raspberry pi every hour to check if the IP address has changed and, if it did, it will update the Google DDNS server.",
+        "projectGithub": "https://github.com/peetypeet5000/personal-website"
+    },
+    {
+        "number": 2,
+        "projectTitle": "Websocket Tic Tac Toe",
+        "projectImage": "tik.png",
+        "projectImageAlt": "Image of the Tic Tac Toe Webpage.",
+        "projectDescription": "This project, initally created as the final project for CS290 - Web Development, uses Websockets to make a dynamic, multiplayer game of TikTakToe. In this game, the turns cycle in a queue-based system, in order of opening the webpage. The game continues until Tik wins, Tak wins, or there is a tie. The game allows dynamic joining and exiting of players, constant syncing of clients, and a synced place-in-queue counter.",
+        "extraContent": "/tiktak",
+        "projectGithub": "https://github.com/peetypeet5000/ws-ticktaktoe"
+    },
+    {
+        "number": 3,
+        "projectTitle": "Current Project - Terminal Website",
+        "projectImage": "term.png",
+        "projectImageAlt": "Image of a terminal screen.",
+        "projectDescription": "This project is currently a WIP to learn React. I am seeking to make a nicer portfolio page that is styled like a terminal. Preferably, it will support interactivity, nice animations, and all the features of this webpage.",
+        "projectGithub": "https://github.com/peetypeet5000/terminal-website"
+    }
+]
