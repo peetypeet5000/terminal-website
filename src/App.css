@@ -49,6 +49,7 @@ body {
 
 .menu-button {
   padding: 3px;
+  font-size: large;
 }
 
 .selected.menu-button {

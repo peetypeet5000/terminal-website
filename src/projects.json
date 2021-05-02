@@ -1,10 +1,10 @@
 [
     {
         "number": 1,
-        "projectTitle": "This Website",
-        "projectImage": "./rpi.jpg",
-        "projectImageAlt": "Image of Raspberry Pi Server",
-        "projectDescription": "This website is running on a Raspberry Pi Model 3b. It is currently set up using a reverse-proxy nginx server, which is used to manage the SSL. Behind this proxy server is a couple node.js applications that serve all the website content. The content is served and templated using express and handlebars, respectively. As the raspberry pi is sitting on my home network, a dynamic DNS needed to be setup. To achive this, I used the DDNS built into Google Domains, as that is where my domain was purchased. A script runs on the raspberry pi every hour to check if the IP address has changed and, if it did, it will update the Google DDNS server.",
+        "projectTitle": "First Website",
+        "projectImage": "./first_site.png",
+        "projectImageAlt": "Image of my first webpage",
+        "projectDescription": "This was the first personal webpage I created after I finished my WebDev class. It was created using node.js and Handlebars.",
         "projectGithub": "https://github.com/peetypeet5000/personal-website"
     },
     {
@@ -18,10 +18,10 @@
     },
     {
         "number": 3,
-        "projectTitle": "Current Project - Terminal Website",
-        "projectImage": "./term.png",
-        "projectImageAlt": "Image of a terminal screen.",
-        "projectDescription": "This project is currently a WIP to learn React. I am seeking to make a nicer portfolio page that is styled like a terminal. Preferably, it will support interactivity, nice animations, and all the features of this webpage.",
+        "projectTitle": "Current Website - Terminal Website",
+        "projectImage": "./rpi.jpg",
+        "projectImageAlt": "Image of a Raspberry Pi",
+        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It is hosted on my Raspberry Pi, using a reverse-proxy nginx server. The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS.",
         "projectGithub": "https://github.com/peetypeet5000/terminal-website"
     }
 ]

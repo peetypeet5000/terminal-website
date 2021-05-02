@@ -7,7 +7,10 @@ export default class About extends React.Component {
       return (
         <div className="about-container">
           <h2>About Me</h2>
-          <p className="about-element">This is text.</p>
+          <p className="about-element">Hi! My name is Peter LaMontagne and I am currently a Sophmore Computer Science Student
+           at Oregon State Univeristy. I am in the computer systems option, with the goal of becoming a Software Engineer
+            after gradution.</p>
+          <p className="about-element">In my free time I like to cook, play piano, run, and read.</p>
           <img className="about-photo" src="./chicago.jpg" alt="A photo of me in Chicago"/>
         </div>
       );

@@ -12,13 +12,7 @@
 
 .about-element {
     flex: 0 1 auto;
-    padding: 10px;
-}
-
-
-.about-element h4 {
-    
-    color: #f21170;
+    padding: 5px;
 }
 
 
@@ -32,4 +26,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+}
+
+.about-emphesis {
+    color: #f21170;
+    font-weight: bold;
+}
+
+.big {
+    font-size: large;
 }

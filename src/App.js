@@ -8,6 +8,7 @@ import FadeIn from 'react-fade-in'
 import projectData from './projects.json'
 import Project from './Project.js'
 import About from './About.js'
+import Contact from './Contact.js'
 
 
 //Renders text given in props one character at a time, like a terminal
@@ -92,7 +93,7 @@ class ProjectsBody extends React.Component {
 
     //maps all projects from the json into a project component
     this.projectElements = projectData.map((project) => 
-      <Project key={project.number} number={project.number} projDisc={project.projectDescription} extra={project.extraContent} title={project.projectTitle} projImg={project.projectImage} imgAlt={project.projectImageAlt} git={project.git} />
+      <Project key={project.number} number={project.number} projDisc={project.projectDescription} extra={project.extraContent} title={project.projectTitle} projImg={project.projectImage} imgAlt={project.projectImageAlt} git={project.projectGithub} />
     );
   }
 
@@ -115,10 +116,10 @@ class Menu extends React.Component {
     return(
       <div>
         <FadeIn>
-          <Button id={'resume'} name={"Resume"} disc={"View my resume"} onClick={this.props.onClick}/>
-          <Button id={'projects'} name={"Projects"} disc={"See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
-          <Button id={'about'} name={"About"} disc={"Read more about me!"} onClick={this.props.onClick}/>
-          <Button id={'contact'} name={"Contact"} disc={"Connect with me"} onClick={this.props.onClick}/>
+          <Button id={'resume'} name={"Resume"} disc={"  ---  View my resume"} onClick={this.props.onClick}/>
+          <Button id={'projects'} name={"Projects"} disc={"  ---  See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
+          <Button id={'about'} name={"About"} disc={"  ---  Read more about me!"} onClick={this.props.onClick}/>
+          <Button id={'contact'} name={"Contact"} disc={"  ---  Connect with me"} onClick={this.props.onClick}/>
         </FadeIn>
       </div>
     );
@@ -153,11 +154,11 @@ export class Button extends React.Component {
   render() {
     if(this.state.hover == true) {
       return (
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >{this.props.name} --- {this.props.disc}</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >{this.props.name}{this.props.disc}</div>
       );
     } else {
       return(
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >{this.props.name} --- {this.props.disc}</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >{this.props.name}{this.props.disc}</div>
       );
     }
   }
@@ -197,6 +198,11 @@ class Body extends React.Component {
         enabled: 'about',
         title: 'About Me'
       });
+    } else if (id === 'contact') {
+      this.setState({
+        enabled: 'contact',
+        title: 'Contact'
+      });
     }
   }
 
@@ -225,6 +231,13 @@ class Body extends React.Component {
       return (
         <div>
           <About/>
+          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
+        </div>
+      );
+    } else if(this.state.enabled == 'contact') {
+      return (
+        <div>
+          <Contact/>
           <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
