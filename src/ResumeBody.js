@@ -1,6 +1,5 @@
 import React from 'react';
 import './ResumeBody.css'
-import { Button } from './App.js'
 import FadeIn from 'react-fade-in';
 
 export default class ResumeBody extends React.Component {

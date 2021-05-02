@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Terminal-Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the current website hosted at peterlamontagne.com. It is running on a Raspberyy Pi 3b using a reverse-proxy nginx server. The purpose of this project was to start to learn React.
+
+# Info From Create React App
 
 ## Available Scripts
 

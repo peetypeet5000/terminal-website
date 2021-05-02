@@ -1,7 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import reactDom from 'react-dom';
-import { render } from '@testing-library/react';
 import React from 'react';
 import ResumeBody from './ResumeBody'
 import FadeIn from 'react-fade-in'
@@ -52,7 +49,7 @@ class Name extends React.Component {
         var newText = ""
 
         //if last char is the _, remove it and put a space, else add it
-        if(state.text[state.text.length - 1] == "_") {
+        if(state.text[state.text.length - 1] === "_") {
           newText = state.text.slice(0, state.text.length - 1) + " "
         } else {
           newText = state.text.slice(0, state.text.length - 1) + "_"
@@ -108,10 +105,6 @@ class ProjectsBody extends React.Component {
 
 
 class Menu extends React.Component {
-  constructor(props){
-    super(props)
-  }
-
   render() {
     return(
       <div>
@@ -152,7 +145,7 @@ export class Button extends React.Component {
 
 
   render() {
-    if(this.state.hover == true) {
+    if(this.state.hover === true) {
       return (
         <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >{this.props.name}{this.props.disc}</div>
       );
@@ -207,34 +200,34 @@ class Body extends React.Component {
   }
 
   getElement() {
-    if (this.state.enabled == 'menu') {
+    if (this.state.enabled === 'menu') {
       return (
         <div>
           <Menu onClick={this.menuOnClick} />
         </div>
       );
-    } else if(this.state.enabled == 'resume') {
+    } else if(this.state.enabled === 'resume') {
       return (
         <div>
           <ResumeBody/>
           <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
-    } else if(this.state.enabled == 'projects') {
+    } else if(this.state.enabled === 'projects') {
       return (
         <div>
           <ProjectsBody/>
           <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
-    } else if(this.state.enabled == 'about') {
+    } else if(this.state.enabled === 'about') {
       return (
         <div>
           <About/>
           <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
-    } else if(this.state.enabled == 'contact') {
+    } else if(this.state.enabled === 'contact') {
       return (
         <div>
           <Contact/>
