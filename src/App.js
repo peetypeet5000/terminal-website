@@ -7,6 +7,7 @@ import ResumeBody from './ResumeBody'
 import FadeIn from 'react-fade-in'
 import projectData from './projects.json'
 import Project from './Project.js'
+import About from './About.js'
 
 
 //Renders text given in props one character at a time, like a terminal
@@ -99,9 +100,6 @@ class ProjectsBody extends React.Component {
     return (
       <div className="project-holder">
         {this.projectElements}
-        <div>
-          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.props.onClick}/>
-        </div>
       </div>
     );
   }
@@ -116,9 +114,12 @@ class Menu extends React.Component {
   render() {
     return(
       <div>
-        <Button id={'resume'} name={"Resume"} disc={"View my resume"} onClick={this.props.onClick}/>
-        <Button id={'projects'} name={"Projects"} disc={"See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
-        <Button id={3} name={"About"} disc={"Read more about me!"} onClick={this.props.onClick}/>
+        <FadeIn>
+          <Button id={'resume'} name={"Resume"} disc={"View my resume"} onClick={this.props.onClick}/>
+          <Button id={'projects'} name={"Projects"} disc={"See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
+          <Button id={'about'} name={"About"} disc={"Read more about me!"} onClick={this.props.onClick}/>
+          <Button id={'contact'} name={"Contact"} disc={"Connect with me"} onClick={this.props.onClick}/>
+        </FadeIn>
       </div>
     );
   }
@@ -191,8 +192,12 @@ class Body extends React.Component {
         enabled: 'projects',
         title: 'Projects'
       });
+    } else if (id === 'about') {
+      this.setState({
+        enabled: 'about',
+        title: 'About Me'
+      });
     }
-
   }
 
   getElement() {
@@ -205,13 +210,22 @@ class Body extends React.Component {
     } else if(this.state.enabled == 'resume') {
       return (
         <div>
-          <ResumeBody onClick={this.menuOnClick} />
+          <ResumeBody/>
+          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
     } else if(this.state.enabled == 'projects') {
       return (
         <div>
-          <ProjectsBody onClick={this.menuOnClick} />
+          <ProjectsBody/>
+          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
+        </div>
+      );
+    } else if(this.state.enabled == 'about') {
+      return (
+        <div>
+          <About/>
+          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
     }

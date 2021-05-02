@@ -1,4 +1,4 @@
-.post-content-resume {
+.about-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -10,29 +10,26 @@
 
 
 
-.resume-element {
+.about-element {
     flex: 0 1 auto;
     padding: 10px;
 }
 
 
-.resume-element h1 {
-    color: #72147e;
-}
-
-.resume-element h4 {
+.about-element h4 {
     
     color: #f21170;
 }
 
 
-.resume-element h2 {
+.about-container h2 {
     color: #72147e; 
 }
 
 
-.resume-photo {
+.about-photo {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
