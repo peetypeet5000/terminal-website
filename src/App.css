@@ -55,6 +55,7 @@ body {
 .selected.menu-button {
   background-color: rgb(140,26,17); 
   color: rgb(191, 190,190);
+  transition: 0.1s;
 }
 
 .box-title {
