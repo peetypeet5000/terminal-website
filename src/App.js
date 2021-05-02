@@ -4,6 +4,7 @@ import reactDom from 'react-dom';
 import { render } from '@testing-library/react';
 import React from 'react';
 import ResumeBody from './ResumeBody'
+import FadeIn from 'react-fade-in'
 
 
 //Renders text given in props one character at a time, like a terminal
@@ -221,8 +222,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <Body />
+        <video autoPlay muted loop playsinline id="background-vid">
+          <source src="bkg.mp4" type="video/mp4" />
+        </video>
+        <FadeIn delay="300" transitionDuration="800">
+          <Header />
+          <Body />
+        </FadeIn>
       </div>
     );
   }
