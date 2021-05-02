@@ -1,25 +1,21 @@
-import { render } from "@testing-library/react"
+import React from 'react';
+import './Project.css'
 
-class Project extends React.Component {
-    constructor(props) {
-        super(props)
-        //init props
-    }
-
+export default class Project extends React.Component {
     render() {
         return (
-            <div class="post">
+            <div className="project-card">
                 <h2>Project {this.props.number}: {this.props.title}</h2>
 
-                <div class="post-content">
-                    <img class="post-image" src="{this.projImg}" alt="{this.props.imgAlt}"/>
-                    <p class="post-text">
+                <div className="project-content">
+                    <img className="project-image" src={this.props.projImg} alt={this.props.imgAlt}/>
+                    <p className="project-text">
                         {this.props.projDisc}
                         {this.props.extra &&
-                            <p><br/>Play the game <a href={this.props.extra}>here.</a></p>
+                            <span><br/>Play the game <a href={this.props.extra}>here.</a></span>
                         }
                         <br/><br/>
-                        See the GitHub repo for this project <a href="{this.props.git}">here.</a>
+                        See the GitHub repo for this project <a href={this.props.git}>here.</a>
                     </p>
                 </div>
             </div>

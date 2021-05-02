@@ -5,6 +5,8 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import ResumeBody from './ResumeBody'
 import FadeIn from 'react-fade-in'
+import projectData from './projects.json'
+import Project from './Project.js'
 
 
 //Renders text given in props one character at a time, like a terminal
@@ -83,20 +85,40 @@ class Header extends React.Component {
   }
 }
 
+class ProjectsBody extends React.Component {
+  constructor(props) {
+    super(props)
+
+    //maps all projects from the json into a project component
+    this.projectElements = projectData.map((project) => 
+      <Project key={project.number} number={project.number} projDisc={project.projectDescription} extra={project.extraContent} title={project.projectTitle} projImg={project.projectImage} imgAlt={project.projectImageAlt} git={project.git} />
+    );
+  }
+
+  render() {
+    return (
+      <div className="project-holder">
+        {this.projectElements}
+        <div>
+          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.props.onClick}/>
+        </div>
+      </div>
+    );
+  }
+}
+
 
 class Menu extends React.Component {
   constructor(props){
     super(props)
   }
 
-
-
   render() {
     return(
       <div>
-        <Button id={'resume'} name={"Resume"} onClick={this.props.onClick}/>
-        <Button id={2} name={"Button 2"} onClick={this.props.onClick}/>
-        <Button id={3} name={"Button 3"} onClick={this.props.onClick}/>
+        <Button id={'resume'} name={"Resume"} disc={"View my resume"} onClick={this.props.onClick}/>
+        <Button id={'projects'} name={"Projects"} disc={"See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
+        <Button id={3} name={"About"} disc={"Read more about me!"} onClick={this.props.onClick}/>
       </div>
     );
   }
@@ -130,11 +152,11 @@ export class Button extends React.Component {
   render() {
     if(this.state.hover == true) {
       return (
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >{this.props.name} --- {this.props.disc}</div>
       );
     } else {
       return(
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >This is a selectable line of text --- {this.props.name}!</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >{this.props.name} --- {this.props.disc}</div>
       );
     }
   }
@@ -164,6 +186,11 @@ class Body extends React.Component {
         enabled: 'menu',
         title: 'Main Menu'
       });
+    } else if (id === 'projects') {
+      this.setState({
+        enabled: 'projects',
+        title: 'Projects'
+      });
     }
 
   }
@@ -179,6 +206,12 @@ class Body extends React.Component {
       return (
         <div>
           <ResumeBody onClick={this.menuOnClick} />
+        </div>
+      );
+    } else if(this.state.enabled == 'projects') {
+      return (
+        <div>
+          <ProjectsBody onClick={this.menuOnClick} />
         </div>
       );
     }
@@ -222,7 +255,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <video autoPlay muted loop playsinline id="background-vid">
+        <video autoPlay muted loop playsInline id="background-vid">
           <source src="bkg.mp4" type="video/mp4" />
         </video>
         <FadeIn delay="300" transitionDuration="800">
