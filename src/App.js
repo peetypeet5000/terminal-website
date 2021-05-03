@@ -151,7 +151,7 @@ export class Button extends React.Component {
       );
     } else {
       return(
-        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} className="menu-button" >{this.props.name}{this.props.disc}</div>
+        <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="menu-button" >{this.props.name}{this.props.disc}</div>
       );
     }
   }
