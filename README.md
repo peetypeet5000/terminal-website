@@ -1,6 +1,14 @@
 # Terminal-Website
 
-This is the current website hosted at peterlamontagne.com. It is running on a Raspberyy Pi 3b, statically served from an nginx server (along with other node apps). The purpose of this project was to start to learn React.
+This is the current iteration of my personal portfolio website. It is running on a Raspberyy Pi 3b, statically served from an nginx server (along with other node apps). The purpose of this project was to start to learn React and component-based frontend design. It is a single page app with multiple components that change state based on user input.
+
+The raspberry pi is setup on my home network, so a DDNS scrpit was created to update the IP address with Google Domains. See that repo [here.](https://github.com/peetypeet5000/ddns-script)
+
+Vist the live site [here.](https://peterlamontagne.com/)
+
+It is styled after one of the common linux command-line setup windows. The specific inspiration is from the raspi-config utility as pictured below:
+![Raspi-Config Terminal Screen](public/term-ex.png)
+
 
 # Info From Create React App
 
