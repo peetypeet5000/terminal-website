@@ -1,6 +1,6 @@
 # Terminal-Website
 
-This is the current website hosted at peterlamontagne.com. It is running on a Raspberyy Pi 3b using a reverse-proxy nginx server. The purpose of this project was to start to learn React.
+This is the current website hosted at peterlamontagne.com. It is running on a Raspberyy Pi 3b, statically served from an nginx server (along with other node apps). The purpose of this project was to start to learn React.
 
 # Info From Create React App
 
