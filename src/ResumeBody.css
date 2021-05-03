@@ -21,13 +21,27 @@
 }
 
 .resume-element h4 {
-    
+    margin-top: 0px;
     color: #f21170;
+    margin-bottom: 5px;
+}
+
+.resume-element h5 {
+    margin-bottom: 3px; 
+}
+
+.resume-element ul {
+    margin-top: 2px;
 }
 
 
 .resume-element h2 {
     color: #72147e; 
+    margin-bottom: 10px;
+}
+
+.no-margin {
+    margin: 0px;
 }
 
 

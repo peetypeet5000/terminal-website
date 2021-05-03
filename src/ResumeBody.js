@@ -28,7 +28,7 @@ export default class ResumeBody extends React.Component {
                                 <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean's List (all terms)<br/>Computer Science - Computer Systems Option
                                 <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms
                                 <br></br>Relevant Projects: Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
-                                <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0, 7 AP classNamees, AP Scholar with Distinction</p>
+                                <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0, 7 AP classes, AP Scholar with Distinction</p>
                             </div>
 
                             <div className="resume-element">
@@ -59,7 +59,7 @@ export default class ResumeBody extends React.Component {
                                     <h4 className="no-margin">Discovery Club Leader | Garden Home Rec Center - Tualatin Hills Parks & Recreation</h4>
                                 </div>
                                 <ul>
-                                    <li>Lead groups of 10+ Elementary school children alone, or more when cooperating with co-workers</li>
+                                    <li>Lead groups of 10+ Elementary school children in art projects, sports, meal time, and more</li>
                                     <li>Ensured safety and happiness of children, and dealt with concerns from parents</li>
                                 </ul>
                             </div>
