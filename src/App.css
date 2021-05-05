@@ -1,9 +1,3 @@
-@media (max-width: 425) {
-  .header {
-    font-size: 2em;    
-  }
-}
-
 body {
   background-color: rgb(168, 35, 168);
   margin: 0;
@@ -100,5 +94,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+
+@media screen and (max-width: 425px) {
+  .header {
+    font-size: 1.75em;    
+  }
+
+  .outer-menu-box {
+    width: 95%;
+  }
+
+  .menu-box {
+    padding: 10px;
+  }
+
+  .box-title {
+    top: -35px;
+  }
+
+  .menu-button {
+    padding: 10px;
+  }
 }
 
