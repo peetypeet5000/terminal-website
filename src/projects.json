@@ -4,7 +4,7 @@
         "projectTitle": "First Website",
         "projectImage": "./first_site.png",
         "projectImageAlt": "Image of my first webpage",
-        "projectDescription": "This was the first personal webpage I created after I finished my WebDev class. It was created using node.js and Handlebars.",
+        "projectDescription": "This was the first personal webpage I created after I finished my WebDev class. It was created using node.js and Handlebars. It makes use of templates and reading in server-side data to render the page.",
         "projectGithub": "https://github.com/peetypeet5000/personal-website"
     },
     {
@@ -21,7 +21,7 @@
         "projectTitle": "Current Website - Terminal Website",
         "projectImage": "./rpi.jpg",
         "projectImageAlt": "Image of a Raspberry Pi",
-        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It is hosted on my Raspberry Pi, using a reverse-proxy nginx server. The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS.",
+        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It is hosted on my Raspberry Pi, statically served by an nginx server (which also reverse-proxies some node apps). The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS.",
         "projectGithub": "https://github.com/peetypeet5000/terminal-website"
     }
 ]

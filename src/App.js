@@ -240,8 +240,8 @@ class Body extends React.Component {
   render() {
     return (
       <div className="outer-menu-box">
-        <pre className="box-title">{this.state.title}</pre>
         <div className="menu-box">
+        <pre className="box-title">{this.state.title}</pre>
           {this.getElement()}
         </div>
       </div>
