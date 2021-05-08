@@ -66,11 +66,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -25px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-top: 0px;
   font-size: 1.2em;
   width: fit-content; 
+  color: rgb(140,26,17);
+  border-left: black solid 1px;
+  border-right: black solid 1px;
 }
 
 #background-vid {
