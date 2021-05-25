@@ -210,28 +210,25 @@ class Body extends React.Component {
       return (
         <div>
           <ResumeBody/>
-          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
     } else if(this.state.enabled === 'projects') {
       return (
         <div>
           <ProjectsBody/>
-          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
     } else if(this.state.enabled === 'about') {
       return (
         <div>
           <About/>
-          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
         </div>
       );
     } else if(this.state.enabled === 'contact') {
       return (
         <div>
           <Contact/>
-          <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>
+          
         </div>
       );
     }
@@ -243,6 +240,7 @@ class Body extends React.Component {
         <div className="menu-box">
         <pre className="box-title">{this.state.title}</pre>
           {this.getElement()}
+          {this.state.enabled != 'menu' && <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>}
         </div>
       </div>
     );

@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 2rem;
   color: black;
-
+  font-size: large;
 }
 
 
@@ -49,8 +49,12 @@ body {
 }
 
 .menu-button {
-  padding: 3px;
-  font-size: large;
+  padding: 10px;
+  font-size: 1.75rem;
+}
+
+.menu-button.return {
+  border: 1px dashed black;
 }
 
 .selected.menu-button {
@@ -85,7 +89,20 @@ body {
   left: 0;
   z-index: -1;
   filter: blur(5px);
+  animation: fadeInAnimation ease-out 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 
 
 .project-holder {
@@ -101,12 +118,17 @@ body {
 
 
 @media screen and (max-width: 425px) {
+  body {
+    font-size: medium;
+    padding: 0px;
+  }
+
   .header {
-    font-size: 1.75em;    
+    font-size: 1.75rem;    
   }
 
   .outer-menu-box {
-    width: 95%;
+    width: 85%;
   }
 
   .menu-box {
@@ -118,7 +140,14 @@ body {
   }
 
   .menu-button {
-    padding: 10px;
+    padding: 15px;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  .outer-menu-box {
+    width: 50%;
+  }
+}
+
 
