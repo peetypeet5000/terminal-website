@@ -10,7 +10,7 @@ export default class ResumeBody extends React.Component {
                         <div className="post-content-resume">
                             <div className="resume-element">
                                 <h1>Peter LaMontagne</h1>
-                                <p>8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com | (503) - 853 - 4419 | peterlamontagne.com</p>
+                                <p>8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com | (503) - 853 - 4419</p>
                             </div>
 
 
@@ -26,13 +26,22 @@ export default class ResumeBody extends React.Component {
                             <div className="resume-element">
                                 <h2>Education</h2>
                                 <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean's List (all terms)<br/>Computer Science - Computer Systems Option
-                                <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms
+                                <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms, Databases
                                 <br></br>Relevant Projects: Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
                                 <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0, 7 AP classes, AP Scholar with Distinction</p>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Experience</h2>
+                                <div  className="no-margin">
+                                    <h5>3/20 – Present</h5>
+                                    <h4 className="no-margin">Full Stack Web Developer | ISCS/University IT - Oregon State University</h4>
+                                </div>
+                                <ul>
+                                    <li>Primarily responsible for maintaining and updating interal tools used by IT staff across the University</li>
+                                    <li>Work with applications built with node.js, Angular, Express, PHP, and more</li>
+                                    <li>Expierience following the software developing lifecycle, working within an agile development model, and using version control systems</li>
+                                </ul>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
                                     <h4 className="no-margin">Helpdesk Student Consultant | CoSINe Helpdesk - Oregon State University</h4>
