@@ -13,7 +13,7 @@ class Name extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: "_", 
+      text: "_",
       n: 0
     };
   }
@@ -30,10 +30,10 @@ class Name extends React.Component {
 
   addLetter() {
     //while we have not used all the text from props
-    if(this.props.text.length + 1 > this.state.n) {
-      
+    if (this.props.text.length + 1 > this.state.n) {
+
       //update state with one new letter
-      this.setState(function(state, props) {
+      this.setState(function (state, props) {
         var newText = props.text.substr(0, state.n) + "_"
 
 
@@ -42,14 +42,14 @@ class Name extends React.Component {
           n: state.n + 1
         };
       });
-    } 
+    }
     //if text is complete, just alternate the flashing of the last character
     else {
-      this.setState(function(state, props) {
+      this.setState(function (state, props) {
         var newText = ""
 
         //if last char is the _, remove it and put a space, else add it
-        if(state.text[state.text.length - 1] === "_") {
+        if (state.text[state.text.length - 1] === "_") {
           newText = state.text.slice(0, state.text.length - 1) + " "
         } else {
           newText = state.text.slice(0, state.text.length - 1) + "_"
@@ -62,7 +62,7 @@ class Name extends React.Component {
       });
     }
   }
- 
+
 
   render() {
     return (
@@ -77,7 +77,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <span>
-          <Name text={">Peter LaMontagne"}/>
+          <Name text={">Peter LaMontagne"} />
         </span>
       </div>
     );
@@ -89,7 +89,7 @@ class ProjectsBody extends React.Component {
     super(props)
 
     //maps all projects from the json into a project component
-    this.projectElements = projectData.map((project) => 
+    this.projectElements = projectData.map((project) =>
       <Project key={project.number} number={project.number} projDisc={project.projectDescription} extra={project.extraContent} title={project.projectTitle} projImg={project.projectImage} imgAlt={project.projectImageAlt} git={project.projectGithub} />
     );
   }
@@ -106,13 +106,13 @@ class ProjectsBody extends React.Component {
 
 class Menu extends React.Component {
   render() {
-    return(
+    return (
       <div>
         <FadeIn>
-          <Button id={'resume'} name={"Resume"} disc={"  ---  View my resume"} onClick={this.props.onClick}/>
-          <Button id={'projects'} name={"Projects"} disc={"  ---  See the various personal and class projects I've worked on"} onClick={this.props.onClick}/>
-          <Button id={'about'} name={"About"} disc={"  ---  Read more about me!"} onClick={this.props.onClick}/>
-          <Button id={'contact'} name={"Contact"} disc={"  ---  Connect with me"} onClick={this.props.onClick}/>
+          <Button id={'resume'} name={"Resume"} disc={"  ---  View my resume"} onClick={this.props.onClick} />
+          <Button id={'projects'} name={"Projects"} disc={"  ---  See the various personal and class projects I've worked on"} onClick={this.props.onClick} />
+          <Button id={'about'} name={"About"} disc={"  ---  Read more about me!"} onClick={this.props.onClick} />
+          <Button id={'contact'} name={"Contact"} disc={"  ---  Connect with me"} onClick={this.props.onClick} />
         </FadeIn>
       </div>
     );
@@ -145,12 +145,12 @@ export class Button extends React.Component {
 
 
   render() {
-    if(this.state.hover === true) {
+    if (this.state.hover === true) {
       return (
         <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="selected menu-button" >{this.props.name}{this.props.disc}</div>
       );
     } else {
-      return(
+      return (
         <div onPointerEnter={this.isHover} onPointerLeave={this.notHover} onClick={(event) => this.props.onClick(event, this.props.id)} className="menu-button" >{this.props.name}{this.props.disc}</div>
       );
     }
@@ -206,41 +206,41 @@ class Body extends React.Component {
           <Menu onClick={this.menuOnClick} />
         </div>
       );
-    } else if(this.state.enabled === 'resume') {
+    } else if (this.state.enabled === 'resume') {
       return (
         <div>
-          <ResumeBody/>
+          <ResumeBody />
         </div>
       );
-    } else if(this.state.enabled === 'projects') {
+    } else if (this.state.enabled === 'projects') {
       return (
         <div>
-          <ProjectsBody/>
+          <ProjectsBody />
         </div>
       );
-    } else if(this.state.enabled === 'about') {
+    } else if (this.state.enabled === 'about') {
       return (
         <div>
-          <About/>
+          <About />
         </div>
       );
-    } else if(this.state.enabled === 'contact') {
+    } else if (this.state.enabled === 'contact') {
       return (
         <div>
-          <Contact/>
-          
+          <Contact />
+
         </div>
       );
     }
   }
-  
+
   render() {
     return (
       <div className="outer-menu-box">
         <div className="menu-box">
-        <pre className="box-title">{this.state.title}</pre>
+          <pre className="box-title">{this.state.title}</pre>
           {this.getElement()}
-          {this.state.enabled != 'menu' && <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick}/>}
+          {this.state.enabled !== 'menu' && <Button id={'menu'} name={"Return to Main Menu"} onClick={this.menuOnClick} />}
         </div>
       </div>
     );
@@ -274,7 +274,7 @@ class App extends React.Component {
     return (
       <div>
         <video autoPlay muted loop playsInline id="background-vid">
-          <source src="bkg.mp4" type="video/mp4" />
+          <source src="./bkg.mp4" type="video/mp4" />
         </video>
         <FadeIn delay="300" transitionDuration="800">
           <Header />
