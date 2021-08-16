@@ -17,9 +17,9 @@ export default class ResumeBody extends React.Component {
                             <div className="resume-element">
                                 <h2>Skills</h2>
                                 <ul>
-                                    <li>Experience in C++, C, HTML/CSS, JavaScript/Node.js, and Python</li>
-                                    <li>Well-versed in Version Management, Windows & Unix Systems, and Software Engineering Principles</li>
-                                    <li>Excellent Written and Verbal Communication</li>
+                                    <li>Experience in C++, C, HTML/CSS, JavaScript/Node.js, PHP, Angluar, React, and Python</li>
+                                    <li>Well-versed in Version Management, Unix, Server Management, CI/CD, and Software Engineering Principles</li>
+                                    <li>Excellent Written/Verbal Communication and Capable of Autonomous Work</li>
                                 </ul>
                             </div>
 
@@ -35,12 +35,13 @@ export default class ResumeBody extends React.Component {
                                 <h2>Experience</h2>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
-                                    <h4 className="no-margin">Full Stack Web Developer | ISCS/University IT - Oregon State University</h4>
+                                    <h4 className="no-margin">Full Stack Web Developer | University IT - Oregon State University</h4>
                                 </div>
                                 <ul>
                                     <li>Primarily responsible for maintaining and updating interal tools used by IT staff across the University</li>
                                     <li>Work with applications built with node.js, Angular, Express, PHP, and more</li>
-                                    <li>Expierience following the software developing lifecycle, working within an agile development model, and using version control systems</li>
+                                    <li>Developed REST APIs, Weback configurations, setup a CI solution, managed servers, improved speed and user experience</li>
+                                    <li>Experience interacting with project stakeholders, collaboarating with an Agile development process, and working highly independently</li>
                                 </ul>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
