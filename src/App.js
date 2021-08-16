@@ -274,7 +274,7 @@ class App extends React.Component {
     return (
       <div>
         <video autoPlay muted loop playsInline id="background-vid">
-          <source src="bkg.mp4" type="video/mp4" />
+          <source src="./bkg.mp4" type="video/mp4" />
         </video>
         <FadeIn delay="300" transitionDuration="800">
           <Header />
