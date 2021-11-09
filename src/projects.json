@@ -21,7 +21,16 @@
         "projectTitle": "Current Website - Terminal Website",
         "projectImage": "./rpi.jpg",
         "projectImageAlt": "Image of a Raspberry Pi",
-        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It is hosted on my Raspberry Pi, statically served by an nginx server (which also reverse-proxies some node apps). The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS.",
+        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It was hosted on my Raspberry Pi, statically served by an nginx server (which also reverse-proxies some node apps). The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS. Now, it is hosted on AWS.",
         "projectGithub": "https://github.com/peetypeet5000/terminal-website"
+    },
+    {
+        "number": 4,
+        "projectTitle": "smallsh",
+        "projectImage": "./smallsh.png",
+        "projectImageAlt": "Terminal displaying smallsh output",
+        "projectDescription": "smallsh is a bash-like shell created as part of CS340 - Operating Systems. It uses POSIX-compatible system calls to exec programs, run background processes, perform input/output redirection, and more.",
+        "projectGithub": "https://github.com/peetypeet5000/smallsh"
     }
+    
 ]
