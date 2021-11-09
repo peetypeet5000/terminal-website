@@ -17,40 +17,43 @@ export default class ResumeBody extends React.Component {
                             <div className="resume-element">
                                 <h2>Skills</h2>
                                 <ul>
-                                    <li>Experience in C++, C, HTML/CSS, JavaScript/Node.js, PHP, Angluar, React, and Python</li>
-                                    <li>Well-versed in Version Management, Unix, Server Management, CI/CD, and Software Engineering Principles</li>
-                                    <li>Excellent Written/Verbal Communication and Capable of Autonomous Work</li>
+                                    <li>Experience with JavaScript/Node.js, Angular, React, HTML/CSS, C++, C, and Python</li>
+                                    <li>Well-versed in Version Management, Agile Development, and UNIX Systems</li>
+                                    <li>Excellent Written and Verbal Communication, Strong Independent Work Ethic</li>
                                 </ul>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Education</h2>
                                 <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean's List (all terms)<br/>Computer Science - Computer Systems Option
-                                <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms, Databases
-                                <br></br>Relevant Projects: Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
-                                <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0, 7 AP classes, AP Scholar with Distinction</p>
+                                <br/>Relevant Courses: Data Structures, Web Development, Operating Systems, Software Engineering I & II, Algorithms, Databases, Computer Programming I & II, Digital Logic Design, Technical Writing
+                                <br></br>Relevant Projects: UNIX Shell, Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
+                                <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction</p>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Experience</h2>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
-                                    <h4 className="no-margin">Full Stack Web Developer | University IT - Oregon State University</h4>
+                                    <h4 className="no-margin">Full Stack Web Developer | Digital Transformation - University IT - Oregon State University</h4>
                                 </div>
                                 <ul>
-                                    <li>Primarily responsible for maintaining and updating interal tools used by IT staff across the University</li>
-                                    <li>Work with applications built with node.js, Angular, Express, PHP, and more</li>
-                                    <li>Developed REST APIs, Weback configurations, setup a CI solution, managed servers, improved speed and user experience</li>
-                                    <li>Experience interacting with project stakeholders, collaboarating with an Agile development process, and working highly independently</li>
+                                    <li>Responsible for maintaining and updating internal web-based & CLI tools used by IT staff at the University</li>
+                                    <li>Develop applications built with Node.js, Angular, Express, PHP, Webpack, Handlebars, and more</li>
+                                    <li>Manage CentOS web servers, maintain security, and perform common DevOps tasks</li>
+                                    <li>Configured and deployed a new CI service for our most used apps, implemented 0-downtime deployments</li>
+                                    <li>Developed API integrations with OSU ITSM Platform, Microsoft Azure, and other API endpoints</li>
+                                    <li>Designed and created entirely new Node.js/Express/MongoDB/Handlebars Management application</li>
+                                    <li>Experience interacting with project stakeholders, collaborating within an agile development process, and working highly independently</li>
                                 </ul>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
                                     <h4 className="no-margin">Helpdesk Student Consultant | CoSINe Helpdesk - Oregon State University</h4>
                                 </div>
                                 <ul>
-                                    <li>Help lead frontline IT support for various colleges in the University.</li>
-                                    <li>Communicate with users and coworkers in a professional, accurate, and timely manner</li>
-                                    <li>Interact with backend system, configure devices, investigate issues, and write documentation</li>
+                                    <li>Helped lead front-line IT support for various colleges in the University, supporting 1000’s of users</li>
+                                    <li>Communicated with users and coworkers in a professional, accurate, and timely manner</li>
+                                    <li>Interacted with back end systems, configured networking, helped troubleshoot, and wrote documentation</li>
                                     <li>Became first student certified Apple technician to repair user’s Mac devices</li>
                                 </ul>
 
@@ -59,9 +62,8 @@ export default class ResumeBody extends React.Component {
                                     <h4 className="no-margin">Summer Camp Lead & Sportsplex Attendant | Mittleman Jewish Community Center</h4>
                                 </div>
                                 <ul>
-                                    <li>Supervised and lead activities for primarily 8-10 year olds</li>
+                                    <li>As sportsplex attendant, was responsible for supervising activities, maintaining safety, closing building</li>
                                     <li>Worked in teams of 2-3 to instruct large (30+) groups of children, with individual attention when necessary</li>
-                                    <li>As Sportsplex Attendant, was responsible for checking in players, helping guests with concerns, ensuring the safety of participants, and closing the facility</li>
                                 </ul>
                                 
                                 <div className="no-margin">
@@ -69,8 +71,7 @@ export default class ResumeBody extends React.Component {
                                     <h4 className="no-margin">Discovery Club Leader | Garden Home Rec Center - Tualatin Hills Parks & Recreation</h4>
                                 </div>
                                 <ul>
-                                    <li>Lead groups of 10+ Elementary school children in art projects, sports, meal time, and more</li>
-                                    <li>Ensured safety and happiness of children, and dealt with concerns from parents</li>
+                                    <li>Instructed groups of 10-15 Elementary school kids, ensured safety, dealt with concerns from parents</li>
                                 </ul>
                             </div>
                             <br></br><br></br><br></br>
