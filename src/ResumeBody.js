@@ -10,29 +10,39 @@ export default class ResumeBody extends React.Component {
                         <div className="post-content-resume">
                             <div className="resume-element">
                                 <h1>Peter LaMontagne</h1>
-                                <p>8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com | (503) - 853 - 4419 | peterlamontagne.com</p>
+                                <p>8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com | (503) - 853 - 4419</p>
                             </div>
 
 
                             <div className="resume-element">
                                 <h2>Skills</h2>
                                 <ul>
-                                    <li>Experience in C++, C, HTML/CSS, JavaScript/Node.js, and Python</li>
-                                    <li>Well-versed in Version Management, Windows & Unix Systems, and Software Engineering Principles</li>
-                                    <li>Excellent Written and Verbal Communication</li>
+                                    <li>Experience in C++, C, HTML/CSS, JavaScript/Node.js, PHP, Angluar, React, and Python</li>
+                                    <li>Well-versed in Version Management, Unix, Server Management, CI/CD, and Software Engineering Principles</li>
+                                    <li>Excellent Written/Verbal Communication and Capable of Autonomous Work</li>
                                 </ul>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Education</h2>
                                 <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean's List (all terms)<br/>Computer Science - Computer Systems Option
-                                <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms
+                                <br/>Relevant Courses: Data Structures, Web Development, Software Engineering, Algorithms, Databases
                                 <br></br>Relevant Projects: Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
                                 <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0, 7 AP classes, AP Scholar with Distinction</p>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Experience</h2>
+                                <div  className="no-margin">
+                                    <h5>3/20 – Present</h5>
+                                    <h4 className="no-margin">Full Stack Web Developer | University IT - Oregon State University</h4>
+                                </div>
+                                <ul>
+                                    <li>Primarily responsible for maintaining and updating interal tools used by IT staff across the University</li>
+                                    <li>Work with applications built with node.js, Angular, Express, PHP, and more</li>
+                                    <li>Developed REST APIs, Weback configurations, setup a CI solution, managed servers, improved speed and user experience</li>
+                                    <li>Experience interacting with project stakeholders, collaboarating with an Agile development process, and working highly independently</li>
+                                </ul>
                                 <div  className="no-margin">
                                     <h5>3/20 – Present</h5>
                                     <h4 className="no-margin">Helpdesk Student Consultant | CoSINe Helpdesk - Oregon State University</h4>
