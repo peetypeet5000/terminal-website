@@ -17,8 +17,8 @@ export default class ResumeBody extends React.Component {
                             <div className="resume-element">
                                 <h2>Skills</h2>
                                 <ul>
-                                    <li>Experience with JavaScript/Node.js, Angular, React, HTML/CSS, C++, C, and Python</li>
-                                    <li>Well-versed in Version Management, Agile Development, and UNIX Systems</li>
+                                    <li>Experience with JavaScript/Node.js, Angular, React, HTML/CSS, C++, and Java</li>
+                                    <li>Well-versed in Version Management, Agile Development, CI, Git, and Linux</li>
                                     <li>Excellent Written and Verbal Communication, Strong Independent Work Ethic</li>
                                 </ul>
                             </div>
@@ -26,15 +26,28 @@ export default class ResumeBody extends React.Component {
                             <div className="resume-element">
                                 <h2>Education</h2>
                                 <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean's List (all terms)<br/>Computer Science - Computer Systems Option
-                                <br/>Relevant Courses: Data Structures, Web Development, Operating Systems, Software Engineering I & II, Algorithms, Databases, Computer Programming I & II, Digital Logic Design, Technical Writing
-                                <br></br>Relevant Projects: UNIX Shell, Node.js & Websocket Tic Tac Toe, Personal Website. GitHub: peetypeet5000</p>
+                                <br/>Relevant Courses: Data Structures, Web Development, Operating Systems I & II, Software Engineering I & II, Algorithms, Databases, Parallel Programming, 
+                                    Usability Engineering,  Digital Logic Design, Technical Writing
+                                <br></br>POSIX Shell, Node.js+Websockets Tic Tac Toe, Personal Website</p>
                                 <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction</p>
                             </div>
 
                             <div className="resume-element">
                                 <h2>Experience</h2>
                                 <div  className="no-margin">
-                                    <h5>3/20 – Present</h5>
+                                    <h5>June 2022 – September 2022</h5>
+                                    <h4 className="no-margin">Software Engineer Intern | Qualtrics Messaging Platform - Qualtrics | Seattle, WA</h4>
+                                </div>
+                                <ul>
+                                    <li>Developed new API endpoints that interacted with Apache Kafka using Java Spring</li>
+                                    <li>Created filterable Kafka consumer to allow users to pinpoint important messages</li>
+                                    <li>Improved speed of existing implementation by up to 5x, enhancing user experience</li>
+                                    <li>Created and improved various frontend components, emphasizing quality of life and usability</li>
+                                    <li>Took new product to feature parity with old and added additional features to empower developers</li>
+                                    <li>Researched and prototyped to make designs decisions based on ambiguous requirements</li>
+                                </ul>
+                                <div  className="no-margin">
+                                    <h5>June 2021 – Present</h5>
                                     <h4 className="no-margin">Full Stack Web Developer | Digital Transformation - University IT - Oregon State University</h4>
                                 </div>
                                 <ul>
@@ -43,11 +56,10 @@ export default class ResumeBody extends React.Component {
                                     <li>Manage CentOS web servers, maintain security, and perform common DevOps tasks</li>
                                     <li>Configured and deployed a new CI service for our most used apps, implemented 0-downtime deployments</li>
                                     <li>Developed API integrations with OSU ITSM Platform, Microsoft Azure, and other API endpoints</li>
-                                    <li>Designed and created entirely new Node.js/Express/MongoDB/Handlebars Management application</li>
-                                    <li>Experience interacting with project stakeholders, collaborating within an agile development process, and working highly independently</li>
+                                    <li>Designed and created entirely new Node.js/Express/MongoDB/Handlebars Management application </li>
                                 </ul>
                                 <div  className="no-margin">
-                                    <h5>3/20 – Present</h5>
+                                    <h5>March 2020 – June 2021</h5>
                                     <h4 className="no-margin">Helpdesk Student Consultant | CoSINe Helpdesk - Oregon State University</h4>
                                 </div>
                                 <ul>
@@ -58,7 +70,7 @@ export default class ResumeBody extends React.Component {
                                 </ul>
 
                                 <div className="no-margin">
-                                    <h5>6/19 – 9/19</h5>
+                                    <h5>June 2019 – September 2019</h5>
                                     <h4 className="no-margin">Summer Camp Lead & Sportsplex Attendant | Mittleman Jewish Community Center</h4>
                                 </div>
                                 <ul>
@@ -67,7 +79,7 @@ export default class ResumeBody extends React.Component {
                                 </ul>
                                 
                                 <div className="no-margin">
-                                    <h5>10/17 – 6/18</h5>
+                                    <h5>October 2017 – June 2018</h5>
                                     <h4 className="no-margin">Discovery Club Leader | Garden Home Rec Center - Tualatin Hills Parks & Recreation</h4>
                                 </div>
                                 <ul>
