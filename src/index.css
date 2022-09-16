@@ -4,6 +4,7 @@ body {
   padding: 2rem;
   color: black;
   font-size: 1.2rem;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 #background-vid {
@@ -60,7 +61,6 @@ body {
 .name {
   color: white;
   opacity: .90;
-  padding-top: 7vh;
   text-align: center;
   font-size: 2.8em;
   font-weight: 600;
@@ -77,7 +77,7 @@ body {
 
 .terminal__outer {
   background-color: rgb(191, 190,190);
-  width: 65%;
+  width: 80%;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -103,6 +103,62 @@ body {
   border-right: black solid 1px;
 }
 
+.window {
+  background-color: #72147e;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  border: 2px solid #49474a;
+}
+
+.window__bar {
+  height: 25px;
+  background-color: #39373a;
+  color: lightgray;
+  font-size: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #49474a;
+}
+
+.window__bar-filler {
+  width: 80px;
+}
+
+.window__bar-circles {
+  display: flex;
+  align-items: center;
+}
+
+.window__bar-circle {
+  background-color: #fe5f57;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin-left: .5rem;
+  margin-right: .25rem;
+}
+
+.window__text {
+  font-size: 1rem;
+  margin-top: 0;
+  color: wheat;
+  font-weight: lighter;
+}
+
+.window__bar-circle__yellow {
+  background-color: #febc2e;
+}
+
+.window__bar-circle__green {
+  background-color: #27c83f;
+}
+
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -111,6 +167,7 @@ body {
 .menu__button {
   padding: 10px;
   font-size: 1.75rem;
+  font-weight: 600;
   text-decoration: none;
   color: black;
 }
@@ -240,14 +297,47 @@ body {
       opacity: 1;
    }
 }
-@media screen and (max-width: 425px) {
+
+
+@media screen and (max-width: 750px) {
   body {
     font-size: medium;
     padding: 0px;
   }
 
   .name {
+    font-size: 3rem;    
+  }
+
+  .terminal__outer {
+    width: 90%;
+    margin-top: 5vh;
+  }
+
+  .window {
+    width: 95%;
+  }
+
+  .terminal {
+    padding: 15px;
+  }
+
+  .terminal__title {
+    top: -36px;
+  }
+
+  .menu__button {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .name {
     font-size: 1.75rem;    
+  }
+
+  .window {
+    width: 99%;
   }
 
   .terminal__outer {
@@ -258,17 +348,23 @@ body {
     padding: 10px;
   }
 
+  .terminal__title {
+    top: -30px;
+  }
+
   .menu__button {
     padding: 15px;
+    width: 90%;
+    font-size: 1.5rem;
   }
 
   .project__card {
     border-bottom: 1px solid grey;
-}
+  }
 }
 
 @media only screen and (min-width: 1600px) {
-  .terminal__outer {
-    width: 50%;
+  .window {
+    width: 75%;
   }
 }
