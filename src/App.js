@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import ResumeBody from './ResumeBody'
-import FadeIn from 'react-fade-in'
 import projectData from './projects.json'
 import Project from './Project.js'
 import About from './About.js'
@@ -108,12 +107,10 @@ class Menu extends React.Component {
   render() {
     return (
       <div>
-        <FadeIn>
-          <Button id={'resume'} name={"Resume"} disc={"  ---  View my resume"} onClick={this.props.onClick} />
-          <Button id={'projects'} name={"Projects"} disc={"  ---  See the various personal and class projects I've worked on"} onClick={this.props.onClick} />
-          <Button id={'about'} name={"About"} disc={"  ---  Read more about me!"} onClick={this.props.onClick} />
-          <Button id={'contact'} name={"Contact"} disc={"  ---  Connect with me"} onClick={this.props.onClick} />
-        </FadeIn>
+        <Button id={'resume'} name={"Resume"} disc={"  ---  View my resume"} onClick={this.props.onClick} />
+        <Button id={'projects'} name={"Projects"} disc={"  ---  See the various personal and class projects I've worked on"} onClick={this.props.onClick} />
+        <Button id={'about'} name={"About"} disc={"  ---  Read more about me!"} onClick={this.props.onClick} />
+        <Button id={'contact'} name={"Contact"} disc={"  ---  Connect with me"} onClick={this.props.onClick} />
       </div>
     );
   }
@@ -276,10 +273,8 @@ class App extends React.Component {
         <video autoPlay muted loop playsInline id="background-vid">
           <source src="./compressed_bkg.mp4" type="video/mp4" />
         </video>
-        <FadeIn delay="300" transitionDuration="800">
-          <Header />
-          <Body />
-        </FadeIn>
+        <Header />
+        <Body />
       </div>
     );
   }
