@@ -32,6 +32,8 @@ export default function Name(props: NameProps): ReactElement {
   }
 
   return (
+    <div className="name">
       <pre>{text}{cursor ? '_' : ' '}</pre>
+    </div>
   )
 }

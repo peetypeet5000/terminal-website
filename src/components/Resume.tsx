@@ -3,13 +3,13 @@ import React from 'react';
 export default function Resume () {
   return (
     <div id="resume" >
-      <div className="post-content-resume">
-        <div className="resume-element">
+      <div className="resume__content">
+        <div className="resume__element">
           <h1>Peter LaMontagne</h1>
           <p>8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com | (503) - 853 - 4419</p>
         </div>
 
-        <div className="resume-element">
+        <div className="resume__element">
           <h2>Skills</h2>
           <ul>
             <li>Experience with JavaScript/Node.js, Angular, React, HTML/CSS, C++, and Java</li>
@@ -18,7 +18,7 @@ export default function Resume () {
           </ul>
         </div>
 
-        <div className="resume-element">
+        <div className="resume__element">
           <h2>Education</h2>
           <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>{'GPA: 3.99 - Dean\'s List (all terms)<br/>Computer Science - Computer Systems Option'}
             <br/>Relevant Courses: Data Structures, Web Development, Operating Systems I & II, Software Engineering I & II, Algorithms, Databases, Parallel Programming,
@@ -27,7 +27,7 @@ export default function Resume () {
           <p><b>Beaverton High School</b><br/>2015-2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction</p>
         </div>
 
-        <div className="resume-element">
+        <div className="resume__element">
           <h2>Experience</h2>
           <div className="no-margin">
             <h5>June 2022 – September 2022</h5>
