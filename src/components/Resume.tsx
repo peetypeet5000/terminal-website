@@ -20,7 +20,7 @@ export default function Resume () {
 
         <div className="resume__element">
           <h2>Education</h2>
-          <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>{'GPA: 3.99 - Dean\'s List (all terms)<br/>Computer Science - Computer Systems Option'}
+          <p><b>Oregon State University</b><br></br>2019-Present (est. 2023)<br></br>GPA: 3.99 - Dean\'s List (all terms)<br><br/>Computer Science - Computer Systems Option
             <br/>Relevant Courses: Data Structures, Web Development, Operating Systems I & II, Software Engineering I & II, Algorithms, Databases, Parallel Programming,
                                 Usability Engineering,  Digital Logic Design, Technical Writing
             <br></br>POSIX Shell, Node.js+Websockets Tic Tac Toe, Personal Website</p>
