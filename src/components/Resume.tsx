@@ -20,15 +20,16 @@ export default function Resume () {
 
         <div className="resume__element">
           <h2>Education</h2>
-          <p><b>Oregon State University </b>September 2019 - June 2023 
-            <b>Major: </b>Bachelors of Science in Computer Science - ABET accredited Computer Systems option
-            <b>GPA: </b>3.99 - Dean&apos;s List (all terms)
+          <p><b>Oregon State University </b>September 2019 - June 2023 <br />
+            <b>Major: </b>Bachelors of Science in Computer Science - ABET accredited Computer Systems option <br />
+            <b>GPA: </b>3.99 - Dean&apos;s List (all terms) <br />
             <b>Relevant Courses:</b> Data Structures, Web Development, Operating Systems, Software Engineering, Algorithms, Databases, Parallel Programming, 
-                    Usability Engineering, Digital Logic Design, Computer Graphics
-            <b>Projects: </b>POSIX Shell, Node.js + Websockets Tic Tac Toe</p>
-            <b>Senior Capstone: </b> Microsoft HoloLens Augmented Reality Visualization using Unity and Mixed Reality Toolkit
-            <b>Involvement: </b>Treasurer - Oregon State Indoor Rock Climbing Club
-          <p><b>Beaverton High School </b>September 2015 - June 2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction</p>
+                    Usability Engineering, Digital Logic Design, Computer Graphics <br />
+            <b>Projects: </b>POSIX Shell, Node.js + Websockets Tic Tac Toe <br />
+            <b>Senior Capstone: </b> Microsoft HoloLens Augmented Reality Visualization using Unity and Mixed Reality Toolkit <br />
+            <b>Involvement: </b>Treasurer - Oregon State Indoor Rock Climbing Club <br />
+            <b>Beaverton High School </b>September 2015 - June 2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction
+          </p>
         </div>
 
         <div className="resume__element">
