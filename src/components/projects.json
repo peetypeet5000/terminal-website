@@ -20,7 +20,7 @@
         "projectTitle": "Current Website - Terminal Website",
         "projectImage": "./rpi.jpg",
         "projectImageAlt": "Image of a Raspberry Pi",
-        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It was hosted on my Raspberry Pi, statically served by an nginx server (which also reverse-proxies some node apps). The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script runs hourly to update the Dynamic DNS. Now, it is hosted on AWS.",
+        "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It used to be hosted on my Raspberry Pi, statically served by an nginx server. The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script used to run hourly to update the Dynamic DNS. Now, it is hosted on Vercel.",
         "projectGithub": "https://github.com/peetypeet5000/terminal-website"
     },
     {
@@ -30,6 +30,14 @@
         "projectImageAlt": "Terminal displaying smallsh output",
         "projectDescription": "smallsh is a bash-like shell created as part of CS340 - Operating Systems. It uses POSIX-compatible system calls to exec programs, run background processes, perform input/output redirection, and more.",
         "projectGithub": "https://github.com/peetypeet5000/smallsh"
+    }
+    {
+        "number": 5,
+        "projectTitle": "AR Structural Testing",
+        "projectImage": "./ar-testing.png",
+        "projectImageAlt": "AR testing project screenshot showing heatmap and sensors",
+        "projectDescription": "This project aims to create a real time physics visualization application. The goal is to see the forces being applied to a building or structure in real time as it is tested in a structural testing lab. This would be achieved by putting on a pair of Augmented Reality (AR) goggles and seeing the forces represented on top of a real world object. AR goggles have the ability to draw computer graphics on top of a user's view of the outside world. The forces will be represented via color, allowing the user to easily see which parts of the building are under stress at any given time.",
+        "projectGithub": "https://github.com/peetypeet5000/ar-structural-testing"
     }
     
 ]
