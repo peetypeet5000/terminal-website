@@ -15,7 +15,7 @@ export default function Projects(): ReactElement {
             <p className="project__text">
               {project.projectDescription}
                 <br/><br/>
-                See the project details <a href={project.projectGithub}>here.</a>
+                See the project details <a href={project.projectLink}>here.</a>
               </p>
           </div>
         </div>);
