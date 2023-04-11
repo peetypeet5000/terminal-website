@@ -5,7 +5,7 @@ export default function Projects(): ReactElement {
 
   return (
     <div className='project'>
-      {projects.map((project, index) => {
+      {projects.reverse().map((project, index) => {
         return (
         <div className="project__card" key={index}>
           <h2>Project {project.number}: {project.projectTitle}</h2>
