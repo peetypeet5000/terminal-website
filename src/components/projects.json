@@ -34,7 +34,7 @@
     {
         "number": 5,
         "projectTitle": "AR Structural Testing",
-        "projectImage": "./ar-testing.png",
+        "projectImage": "./ar_testing.png",
         "projectImageAlt": "AR testing project screenshot showing heatmap and sensors",
         "projectDescription": "This project aims to create a real time physics visualization application. The goal is to see the forces being applied to a building or structure in real time as it is tested in a structural testing lab. This would be achieved by putting on a pair of Augmented Reality (AR) goggles and seeing the forces represented on top of a real world object. AR goggles have the ability to draw computer graphics on top of a user's view of the outside world. The forces will be represented via color, allowing the user to easily see which parts of the building are under stress at any given time.",
         "projectGithub": "https://github.com/peetypeet5000/ar-structural-testing"
