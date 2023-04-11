@@ -1,42 +1,51 @@
 [
     {
-        "number": 1,
         "projectTitle": "First Website",
         "projectImage": "./first_site.png",
         "projectImageAlt": "Image of my first webpage",
         "projectDescription": "This was the first personal webpage I created after I finished my WebDev class. It was created using node.js and Handlebars. It makes use of templates and reading in server-side data to render the page.",
-        "projectGithub": "https://github.com/peetypeet5000/personal-website"
+        "projectLink": "https://github.com/peetypeet5000/personal-website"
     },
     {
-        "number": 2,
         "projectTitle": "Websocket Tic Tac Toe",
         "projectImage": "./tik.png",
         "projectImageAlt": "Image of the Tic Tac Toe Webpage.",
         "projectDescription": "This project, initally created as the final project for CS290 - Web Development, uses Websockets to make a dynamic, multiplayer game of TikTakToe. In this game, the turns cycle in a queue-based system, in order of opening the webpage. The game continues until Tik wins, Tak wins, or there is a tie. The game allows dynamic joining and exiting of players, constant syncing of clients, and a synced place-in-queue counter.",
-        "projectGithub": "https://github.com/peetypeet5000/ws-ticktaktoe"
+        "projectLink": "https://github.com/peetypeet5000/ws-ticktaktoe"
     },
     {
-        "number": 3,
         "projectTitle": "Current Website - Terminal Website",
         "projectImage": "./rpi.jpg",
         "projectImageAlt": "Image of a Raspberry Pi",
         "projectDescription": "This is the current website, created using React and node.js. The purpose of this project was to teach myself some of the basics of using React. It used to be hosted on my Raspberry Pi, statically served by an nginx server. The nginx server manages the SSL and allows multiple node.js apps to be run. The domain was purchased using Google Domains, and a script used to run hourly to update the Dynamic DNS. Now, it is hosted on Vercel.",
-        "projectGithub": "https://github.com/peetypeet5000/terminal-website"
+        "projectLink": "https://github.com/peetypeet5000/terminal-website"
     },
     {
-        "number": 4,
         "projectTitle": "smallsh",
         "projectImage": "./smallsh.png",
         "projectImageAlt": "Terminal displaying smallsh output",
         "projectDescription": "smallsh is a bash-like shell created as part of CS340 - Operating Systems. It uses POSIX-compatible system calls to exec programs, run background processes, perform input/output redirection, and more.",
-        "projectGithub": "https://github.com/peetypeet5000/smallsh"
+        "projectLink": "https://github.com/peetypeet5000/smallsh"
     },
     {
-        "number": 5,
+        "projectTitle": "UI Water Auto-Sampler",
+        "projectImage": "./figma.png",
+        "projectImageAlt": "Figma screenshot showing various panes of the project",
+        "projectDescription": "For CS 352 - Usability Engineering, my group and I created a mock UI in Figma for a wireless water sampler. This was a term-long project where we conducted user studies, prototyped, and presented our work to try and create the most usable and unbiased UI possible. This project taught me the basics of good UI design, how to use Figma, and how to make an interface that isn't biased against people different from myself.",
+        "projectLink": "https://github.com/peetypeet5000/smallsh"
+    },
+    {
+        "projectTitle": "Computer Graphics Herd Immunity Simulation",
+        "projectImage": "./herd.png",
+        "projectImageAlt": "Grid of people colored white, red, and green",
+        "projectDescription": "For CS 450 - Computer Graphics, I created a simulation of an infection spreading through a community. A graphical representation was created in OpenGL to see the output of this simulation in real time. This project gave me a good introduction to the basics of computer graphics and writing shaders, as well as balancing performance issues while also running a simulation in the background.",
+        "projectLink": "https://github.com/peetypeet5000/smallsh"
+    },
+    {
         "projectTitle": "AR Structural Testing",
         "projectImage": "./ar_testing.png",
         "projectImageAlt": "AR testing project screenshot showing heatmap and sensors",
         "projectDescription": "This project aims to create a real time physics visualization application. The goal is to see the forces being applied to a building or structure in real time as it is tested in a structural testing lab. This would be achieved by putting on a pair of Augmented Reality (AR) goggles and seeing the forces represented on top of a real world object. AR goggles have the ability to draw computer graphics on top of a user's view of the outside world. The forces will be represented via color, allowing the user to easily see which parts of the building are under stress at any given time.",
-        "projectGithub": "https://github.com/peetypeet5000/ar-structural-testing"
+        "projectLink": "https://github.com/peetypeet5000/ar-structural-testing"
     }
 ]
