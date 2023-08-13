@@ -40,6 +40,29 @@
   transition: 0.1s;
 }
 
+.menu__info {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.menu__info img {
+  border-radius: 50%;
+  max-width: 200px;
+  object-fit: cover;
+  flex-grow: 0;
+}
+
+.menu__info p {
+  margin-right: 5rem;
+}
+
+.menu__greeting h2 {
+ color: #72147e;
+}
+
 @media screen and (max-width: 750px) {
   .menu__button {
     padding: 10px;

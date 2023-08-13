@@ -27,7 +27,7 @@ export default function About() {
         at my school.
       </p>
       <div className="about__photo">
-        <img src="./chicago.jpg" alt="Me in Chicago" />
+        <img src="./train.jpg" alt="Me standing next to a train in Haarlem, Netherlands" />
         <img src="./climb.jpg" alt="Me climbing in Smith Rock, Oregon" />
       </div>
     </div>
