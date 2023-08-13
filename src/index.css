@@ -31,33 +31,6 @@ body {
     width: 95%;
 }
 
-.about h2 {
-  color: #72147e; 
-}
-
-.about__paragraph {
-    flex: 0 1 auto;
-    padding: 5px;
-}
-
-.about__photo {
-    flex: 0 1 auto;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.about__emphesis {
-    color: #f21170;
-    font-weight: bold;
-}
-
-.about__paragraph__big {
-    font-size: large;
-} 
-
 .name {
   color: white;
   opacity: .90;
@@ -209,54 +182,6 @@ body {
     max-width: 250px;
     max-height: 250px;
 
-}
-
-.resume__content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 950px;
-    width: 95%;
-}
-
-.resume__element {
-    flex: 0 1 auto;
-    padding: 10px;
-}
-
-.resume__element p {
-    line-height: 1.2rem;
-}
-
-.resume__element h1 {
-    color: #72147e;
-}
-
-.resume__element h4 {
-    margin-top: 0px;
-    color: #f21170;
-    margin-bottom: 5px;
-}
-
-.resume__element h5 {
-    margin-bottom: 3px; 
-}
-
-.resume__element ul {
-    margin-top: 2px;
-}
-
-.resume__element h2 {
-    color: #72147e; 
-    margin-bottom: 10px;
-}
-
-.resume__photo {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .no-margin {

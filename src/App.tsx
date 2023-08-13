@@ -27,7 +27,7 @@ export default function App () {
         <p className='window__text'>Raspberry Pi 3 Model B Rev 2.1</p>
         <div className="terminal__outer">
           <div className="terminal">
-            <pre className="terminal__title">{location.pathname}</pre>
+            <pre className="terminal__title">/home{location.pathname}</pre>
             <Outlet />
             {location.pathname != '/' && 
               <Link className='menu__button menu__button__return' to='/'>Return to Menu </Link>

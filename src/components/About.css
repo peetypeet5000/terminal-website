@@ -1,0 +1,26 @@
+.about h2 {
+    color: #72147e; 
+  }
+  
+.about__paragraph {
+    flex: 0 1 auto;
+    padding: 5px;
+}
+  
+.about__photo img {
+    flex: 0 1 auto;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.about__emphesis {
+    color: #f21170;
+    font-weight: bold;
+}
+  
+.about__paragraph__big {
+    font-size: large;
+} 

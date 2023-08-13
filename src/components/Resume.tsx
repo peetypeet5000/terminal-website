@@ -1,4 +1,5 @@
 import React from 'react';
+import './Resume.css'
 
 export default function Resume () {
   return (
@@ -11,11 +12,11 @@ export default function Resume () {
 
         <div className="resume__element">
           <h2>Skills</h2>
-          <ul>
-            <li><b>Programming Languages: </b>TypeScript, JavaScript, HTML, CSS, C++, Python, and Java</li>
-            <li><b>Technologies: </b>Git/GitHub, Jenkins/CI,Docker, Linux, React, Angular, Node.js, Express, Jest, Apache Kafka</li>
-            <li><b>Concepts: </b>REST APIs, Agile Development, Networking, Web Protocols, Databases, Testing</li>
-          </ul>
+            <p>
+              <b>Programming Languages: </b>TypeScript, JavaScript, HTML, CSS, C++, Python, and Java <br />
+              <b>Technologies: </b>Git/GitHub, Jenkins/CI,Docker, Linux, React, Angular, Node.js, Express, Jest, Apache Kafka <br />
+              <b>Concepts: </b>REST APIs, Agile Development, Networking, Web Protocols, Databases, Testing
+            </p>
         </div>
 
         <div className="resume__element">
@@ -25,7 +26,7 @@ export default function Resume () {
             <b>GPA: </b>3.99 - Dean&apos;s List (all terms) <br />
             <b>Relevant Courses:</b> Data Structures, Web Development, Operating Systems, Software Engineering, Algorithms, Databases, Parallel Programming, 
                     Usability Engineering, Digital Logic Design, Computer Graphics <br />
-            <b>Projects: </b>POSIX Shell, Node.js + Websockets Tic Tac Toe <br />
+            <b>Projects: </b>POSIX Shell, Node.js + Websockets Tic Tac Toe, Water Monitor User Interface <br />
             <b>Senior Capstone: </b> Microsoft HoloLens Augmented Reality Visualization using Unity and Mixed Reality Toolkit <br />
             <b>Involvement: </b>Treasurer - Oregon State Indoor Rock Climbing Club <br />
             <b>Beaverton High School </b>September 2015 - June 2019, GPA: 4.0/4.23, 7 AP classes, AP Scholar with Distinction
@@ -35,15 +36,16 @@ export default function Resume () {
         <div className="resume__element">
           <h2>Experience</h2>
           <div className="no-margin">
-            <h5>June 2021 – Present</h5>
+            <h5>June 2021 – July 2023</h5>
             <h4 className="no-margin">Full Stack Web Developer | Digital Transformation - University IT - Oregon State University</h4>
           </div>
           <ul>
-            <li>Responsible for maintaining and updating internal web-based & CLI tools used by IT staff at the University</li>
-            <li>Construct applications built with Node.js, Angular, Express, PHP, Webpack, Handlebars, and more</li>
-            <li>Manage CentOS & Ubuntu web servers, CI service, deployments, and perform common DevOps tasks</li>
-            <li>Implemented new practices such as: 0-downtime deployments, CI pipelines, application health alerting</li>
-            <li>Create REST API integrations with OSU ITSM Platform, Microsoft Azure, and other in-house APIs</li>
+            <li>Maintained and updated 5 internal websites & 6 scheduled scripts used by 300+ IT staff internally</li>
+            <li>Sped up search by up to 3x, page load by 5x to Node.js/Angular SPA used 400+ times daily</li>
+            <li>Created Python & Node.js scripts to process 1000+ licenses, integrated DocuSign, Adobe, Grouper APIs</li>
+            <li>Designed easy to use Microsoft Teams alerting NPM package, pushed to release it open source</li>
+            <li>Managed CentOS & Ubuntu web servers, MongoDB, deployments, and performed common DevOps tasks</li>
+            <li>Implemented new practices such as: Zero downtime deployments, CI pipelines, GenderMag UI analysis</li>
             <li>Led development and design for entirely new Node.js/Express/MongoDB Management web application</li>
           </ul>
           <div className="no-margin">
@@ -53,7 +55,7 @@ export default function Resume () {
           <ul>
             <li>Developed new REST API endpoints that interfaced with Apache Kafka using Java Spring and the SPA</li>
             <li>Built filterable Kafka consumer in Java to allow users to pinpoint important messages</li>
-            <li>Improved speed of existing implementation by up to 5x, enhancing user experience</li>
+            <li>Improved speed of existing implementation by up to 500%, enhancing user experience</li>
             <li>Designed and improved various frontend UI components in React, emphasizing quality of life and usability</li>
             <li>Updated app in Docker containers, achieved 90%+ test coverage, and deployed containers to AWS</li>
             <li>Researched and prototyped to make designs decisions based on ambiguous requirements, consulted team</li>
