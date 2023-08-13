@@ -35,6 +35,11 @@
   transition: 0.1s;
 }
 
+.menu__button:hover .menu__subheader {
+  color: rgb(191, 190, 190);
+  transition: 0.1s;
+}
+
 @media screen and (max-width: 750px) {
   .menu__button {
     padding: 10px;
