@@ -130,3 +130,9 @@
 .name__text {
   animation: textShadow 1.6s infinite;
 }
+
+@media screen and (max-width: 750px) {
+  .name {
+    font-size: 3rem;
+  }
+}

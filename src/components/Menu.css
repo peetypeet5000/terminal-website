@@ -23,10 +23,39 @@
   color: #404040;
 }
 
-.menu__button__return {
+.menu__return-button {
   display: block;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: .5rem;
+}
+
+.menu__return-button-icon {
+  margin-right: .5rem;
+  position: relative;
+  top: 6px;
+  font-size: 2rem;
+}
+
+.menu__return-button__small {
+  display: block;
+  width: fit-content;
+  padding: .3rem;
+  margin: 0;
+}
+
+.menu__return-button__small span {
+  padding: .3rem;
+  margin: 0;
+  color: black;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu__return-button__small span:hover {
+  background-color: rgb(140, 26, 17);
+  color: rgb(191, 190, 190);
+  transition: 0.1s;
 }
 
 .menu__button:hover {

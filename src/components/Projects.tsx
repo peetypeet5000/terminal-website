@@ -1,5 +1,7 @@
 import React, { ReactElement } from "react";
 import projects from "./projects.json";
+import './Projects.css'
+import './Menu.css'
 
 export default function Projects(): ReactElement {
   return (
@@ -8,7 +10,7 @@ export default function Projects(): ReactElement {
         return (
           <div className="project__card" key={index}>
             <h2>
-              Project {index + 1}: {project.projectTitle}
+              {project.projectTitle}
             </h2>
 
             <div className="project__content">
@@ -21,7 +23,7 @@ export default function Projects(): ReactElement {
                 {project.projectDescription}
                 <br />
                 <br />
-                See the project details <a href={project.projectLink}>here.</a>
+                {project.projectLink && <a className="menu__button" href={project.projectLink} target="_blank" rel="noreferrer">Link to Project Repository</a>}
               </p>
             </div>
           </div>

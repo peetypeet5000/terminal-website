@@ -26,9 +26,19 @@ export default function App() {
         <div className="terminal__outer">
           <div className="terminal">
             <pre className="terminal__title">/home{location.pathname}</pre>
+            {location.pathname != "/" && location.pathname != "/contact" && (
+              <Link className="menu__return-button__small" to="/">
+                <span className="material-symbols-outlined">
+                  arrow_back
+                </span>
+              </Link>
+            )}
             <Outlet />
             {location.pathname != "/" && (
-              <Link className="menu__button menu__button__return" to="/">
+              <Link className="menu__button menu__return-button" to="/">
+                <span className="material-symbols-outlined menu__return-button-icon">
+                  arrow_back
+                </span>
                 Return to Menu{" "}
               </Link>
             )}

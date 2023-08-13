@@ -28,21 +28,27 @@
     "projectLink": "https://github.com/peetypeet5000/smallsh"
   },
   {
-    "projectTitle": "UI Water Auto-Sampler",
+    "projectTitle": "UI for Water Auto-Sampler",
     "projectImage": "./figma.png",
     "projectImageAlt": "Figma screenshot showing various panes of the project",
     "projectDescription": "For CS 352 - Usability Engineering, my group and I created a mock UI in Figma for a wireless water sampler. This was a term-long project where we conducted user studies, prototyped, and presented our work to try and create the most usable and unbiased UI possible. This project taught me the basics of good UI design, how to use Figma, and how to make an interface that isn't biased against people different from myself.",
-    "projectLink": "https://github.com/peetypeet5000/smallsh"
+    "projectLink": "https://www.figma.com/file/ohEAerPpRqo8LyOEPolceQ/FINAL-PROJECT?type=design&node-id=0%3A1&mode=design&t=kQRP5Bvvyx5o4nxh-1"
   },
   {
     "projectTitle": "Computer Graphics Herd Immunity Simulation",
     "projectImage": "./herd.png",
     "projectImageAlt": "Grid of people colored white, red, and green",
     "projectDescription": "For CS 450 - Computer Graphics, I created a simulation of an infection spreading through a community. A graphical representation was created in OpenGL to see the output of this simulation in real time. This project gave me a good introduction to the basics of computer graphics and writing shaders, as well as balancing performance issues while also running a simulation in the background.",
-    "projectLink": "https://github.com/peetypeet5000/smallsh"
+    "projectLink": "https://github.com/peetypeet5000/cs450/tree/main/final"
   },
   {
-    "projectTitle": "AR Structural Testing",
+    "projectTitle": "Custom Compiler Frontend and AST Creator",
+    "projectImage": "./ast.png",
+    "projectImageAlt": "Abstract Syntax Tree from the compiler",
+    "projectDescription": "In CS480 - Translators, we created most of a compiler over the course of the term. First, we made the frontend which scanned a subset of python code into tokens and parsed those tokens using a custom grammar. This compiler was capable of compiling the Python code into C code. We then added functionality to make an abstract syntax tree out of the frontends output. This AST representation could then be passed to GraphViz to create a visual representation of the code as it was parsed by our grammar."
+  },
+  {
+    "projectTitle": "Hololens Materials Stress Visualisation",
     "projectImage": "./ar_testing.png",
     "projectImageAlt": "AR testing project screenshot showing heatmap and sensors",
     "projectDescription": "This project aims to create a real time physics visualization application. The goal is to see the forces being applied to a building or structure in real time as it is tested in a structural testing lab. This would be achieved by putting on a pair of Augmented Reality (AR) goggles and seeing the forces represented on top of a real world object. AR goggles have the ability to draw computer graphics on top of a user's view of the outside world. The forces will be represented via color, allowing the user to easily see which parts of the building are under stress at any given time.",
