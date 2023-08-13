@@ -1,5 +1,6 @@
 import React, { ReactElement, useEffect, useState } from 'react'
 import { NameProps } from './types'
+import './Name.css'
 
 // Renders text given in props one character at a time, like a terminal
 export default function Name(props: NameProps): ReactElement {
@@ -33,7 +34,7 @@ export default function Name(props: NameProps): ReactElement {
 
   return (
     <div className="name">
-      <pre>{text}{cursor ? '_' : ' '}</pre>
+      <pre className='name__text'>{text}{cursor ? '_' : ' '}</pre>
     </div>
   )
 }

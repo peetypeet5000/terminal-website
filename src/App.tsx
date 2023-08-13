@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import Name from './components/Name'
+import './components/Menu.css'
 
 export default function App () {
   const location = useLocation();
 
   return (
-    <>
+    <div className='crt'>
       <video autoPlay muted loop playsInline id="background-vid">
         <source src="./compressed_bkg.mp4" type="video/mp4" />
       </video>
@@ -19,7 +20,7 @@ export default function App () {
             <div className='window__bar-circle window__bar-circle__green' />
           </div>
           <div>
-            /setup - root@localhost - user-config
+            peter@peter-raspi: ~ - ssh pi
           </div>
           <div className='window__bar-filler' />
         </div>
@@ -34,6 +35,6 @@ export default function App () {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
