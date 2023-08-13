@@ -1,54 +1,50 @@
 .menu {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu__button {
-    padding: 10px;
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: baseline;
+  padding: 10px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: baseline;
 }
 
 .menu__header {
-    width: 8rem;
+  width: 8rem;
 }
 
 .menu__subheader {
-    font-size: 1rem;
-    font-style: italic;
-    color: #404040;
+  font-size: 1rem;
+  font-style: italic;
+  color: #404040;
 }
 
-
-  
 .menu__button__return {
-    display: block;
-    width: 100%;
-    margin-top: 1rem;
-}
-  
-.menu__button:hover {
-    background-color: rgb(140,26,17); 
-    color: rgb(191, 190,190);
-    transition: 0.1s;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
 }
 
+.menu__button:hover {
+  background-color: rgb(140, 26, 17);
+  color: rgb(191, 190, 190);
+  transition: 0.1s;
+}
 
 @media screen and (max-width: 750px) {
-    .menu__button {
-      padding: 10px;
-    }
+  .menu__button {
+    padding: 10px;
   }
-
+}
 
 @media screen and (max-width: 450px) {
-    .menu__button {
-        padding: 15px;
-        width: 90%;
-        font-size: 1.5rem;
-    }
+  .menu__button {
+    padding: 15px;
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }

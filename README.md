@@ -9,7 +9,6 @@ Vist the live site [here.](https://peterlamontagne.com/)
 It is styled after one of the common linux command-line setup windows. The specific inspiration is from the raspi-config utility as pictured below:
 ![Raspi-Config Terminal Screen](public/term-ex.png)
 
-
 # Info From Create React App
 
 ## Available Scripts

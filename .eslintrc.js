@@ -1,25 +1,22 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended'
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json']
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json"],
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ["react"],
   rules: {
-    'space-before-function-paren': 'off',
-    '@typescript-eslint/space-before-function-paren': 'off'
-  }
-}
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+  },
+};

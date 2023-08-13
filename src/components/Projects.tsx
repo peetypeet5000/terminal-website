@@ -1,25 +1,32 @@
-import React, { ReactElement } from 'react';
-import projects from './projects.json';
+import React, { ReactElement } from "react";
+import projects from "./projects.json";
 
 export default function Projects(): ReactElement {
-
   return (
-    <div className='project'>
+    <div className="project">
       {projects.reverse().map((project, index) => {
         return (
-        <div className="project__card" key={index}>
-          <h2>Project {index + 1}: {project.projectTitle}</h2>
+          <div className="project__card" key={index}>
+            <h2>
+              Project {index + 1}: {project.projectTitle}
+            </h2>
 
-          <div className="project__content">
-            <img className="project__image" src={project.projectImage} alt={project.projectImageAlt}/>
-            <p className="project__text">
-              {project.projectDescription}
-                <br/><br/>
+            <div className="project__content">
+              <img
+                className="project__image"
+                src={project.projectImage}
+                alt={project.projectImageAlt}
+              />
+              <p className="project__text">
+                {project.projectDescription}
+                <br />
+                <br />
                 See the project details <a href={project.projectLink}>here.</a>
               </p>
+            </div>
           </div>
-        </div>);
+        );
       })}
     </div>
-  );    
+  );
 }

@@ -4,13 +4,13 @@ body {
   padding: 2rem;
   color: black;
   font-size: 1.2rem;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #background-vid {
   position: fixed;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -22,46 +22,45 @@ body {
 }
 
 .about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 950px;
-    width: 95%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  width: 95%;
 }
 
 .name {
   color: white;
-  opacity: .90;
+  opacity: 0.9;
   text-align: center;
   font-size: 2.8em;
   font-weight: 600;
-  
 }
 
 .terminal {
   padding: 30px;
-  background-color: rgb(191, 190,190);
+  background-color: rgb(191, 190, 190);
   border: solid black 1.5px;
   position: relative;
-  cursor:'pointer'
+  cursor: "pointer";
 }
 
 .terminal__outer {
-  background-color: rgb(191, 190,190);
+  background-color: rgb(191, 190, 190);
   width: 80%;
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12vh;
-  box-shadow: 15px 15px rgba(0, 0, 0, .6);
+  box-shadow: 15px 15px rgba(0, 0, 0, 0.6);
   margin-bottom: 200px;
 }
 
 .terminal__title {
   position: relative;
-  background-color: rgb(191, 190,190);
+  background-color: rgb(191, 190, 190);
   top: -55px;
   margin-left: auto;
   margin-right: auto;
@@ -70,8 +69,8 @@ body {
   padding-right: 8px;
   padding-top: 0px;
   font-size: 1em;
-  width: fit-content; 
-  color: rgb(140,26,17);
+  width: fit-content;
+  color: rgb(140, 26, 17);
   border-left: black solid 1px;
   border-right: black solid 1px;
 }
@@ -112,8 +111,8 @@ body {
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  margin-left: .5rem;
-  margin-right: .25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
 }
 
 .window__text {
@@ -139,15 +138,14 @@ body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .project__card {
-    flex: 1 1;
-    padding: 10px;
-    margin: 20px;
-    margin-top: 0px;
-    border-bottom: 3px solid grey;
+  flex: 1 1;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 0px;
+  border-bottom: 3px solid grey;
 }
 
 .project__card h2 {
@@ -156,36 +154,35 @@ body {
 }
 
 .project__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .project__element {
-    flex: 1 1 auto;
-    padding: 10px;
+  flex: 1 1 auto;
+  padding: 10px;
 }
 
 .project__text {
-    flex: 5 1 70%;
-    padding: 10px;
+  flex: 5 1 70%;
+  padding: 10px;
 }
 
 .project__image {
-    flex: 1 4 30%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 250px;
-    max-height: 250px;
-
+  flex: 1 4 30%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 .no-margin {
-    margin: 0px;
+  margin: 0px;
 }
 
 /* Screen door effect from: http://aleclownes.com/2017/02/01/crt-display.html */
@@ -201,22 +198,28 @@ body {
   right: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
   z-index: 2;
-  background-size: 100% 2px, 3px 100%;
+  background-size:
+    100% 2px,
+    3px 100%;
   pointer-events: none;
 }
 
-
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
-
 
 @media screen and (max-width: 750px) {
   body {
@@ -225,7 +228,7 @@ body {
   }
 
   .name {
-    font-size: 3rem;    
+    font-size: 3rem;
   }
 
   .terminal__outer {
@@ -248,7 +251,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .name {
-    font-size: 1.75rem;    
+    font-size: 1.75rem;
   }
 
   .window {

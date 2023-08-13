@@ -1,3 +1,3 @@
 export interface NameProps {
-    text: string
+  text: string;
 }
