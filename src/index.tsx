@@ -6,7 +6,6 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import "./index.css";
 import App from "./App";
 import Resume from "./components/Resume";
 import Menu from "./components/Menu";

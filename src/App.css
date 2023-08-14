@@ -55,7 +55,13 @@ body {
   margin-right: auto;
   margin-top: 12vh;
   box-shadow: 15px 15px rgba(0, 0, 0, 0.6);
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+.terminal__outer__small {
+  width: 24%;
+  margin-left: 10%;
+  margin-top: 0;
 }
 
 .terminal__title {
@@ -73,6 +79,21 @@ body {
   color: rgb(140, 26, 17);
   border-left: black solid 1px;
   border-right: black solid 1px;
+}
+
+.terminal__selector {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3px 0 3px;
+}
+
+.terminal__selector label {
+  user-select: none;
+}
+
+.terminal__selector:first-of-type {
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px
 }
 
 .window {

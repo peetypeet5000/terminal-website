@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import Name from "./components/Name";
 import "./components/Menu.css";
+import './App.css'
 
 export default function App() {
   const location = useLocation();
+  const [scanlines, setScanlines] = useState(true);
+  const [background, setBackground] = useState(true);
 
   return (
-    <div className="crt">
-      <video autoPlay muted loop playsInline id="background-vid">
+    <div className={scanlines ? "crt" : ""}>
+      <video autoPlay muted loop={background} playsInline id="background-vid">
         <source src="./compressed_bkg.mp4" type="video/mp4" />
       </video>
       <Name text={">Peter LaMontagne"} />
@@ -42,6 +45,30 @@ export default function App() {
                 Return to Menu{" "}
               </Link>
             )}
+          </div>
+        </div>
+
+        <div className="terminal__outer terminal__outer__small">
+          <div className="terminal">
+            <pre className="terminal__title">Accessibility</pre>
+            <div className="terminal__selector">
+              <label htmlFor="scanlines">Toggle Scanline Effect</label>
+              <input id="scanlines" type="checkbox" checked={scanlines} onChange={e => setScanlines(e.target.checked)}></input>
+            </div>
+            <div className="terminal__selector">
+              <label htmlFor="background">Toggle Moving Background</label>
+              <input id="background" type="checkbox" checked={background} onChange={e => {
+                  setBackground(e.target.checked);
+                  const v = document.getElementById("background-vid");
+                  if(v instanceof  HTMLVideoElement) {
+                    if (e.target.checked == true) {
+                      v.play()
+                    } else {
+                      v.pause()
+                    }
+                  }
+                }}></input>
+            </div>
           </div>
         </div>
       </div>
