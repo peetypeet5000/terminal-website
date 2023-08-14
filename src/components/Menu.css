@@ -15,6 +15,7 @@
 
 .menu__header {
   width: 8rem;
+  flex-shrink: 0;
 }
 
 .menu__subheader {
@@ -80,12 +81,18 @@
 .menu__info img {
   border-radius: 50%;
   max-width: 200px;
+  min-width: 80px;
   object-fit: cover;
-  flex-grow: 0;
+  flex: 1 1 200px;
 }
 
 .menu__info p {
-  margin-right: 5rem;
+  margin-right: 5%;
+}
+
+.menu__greeting {
+  flex: 3 2 700px;
+  max-width: 1000px;
 }
 
 .menu__greeting h2 {
@@ -95,13 +102,23 @@
 @media screen and (max-width: 750px) {
   .menu__button {
     padding: 10px;
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   .menu__button {
-    padding: 15px;
-    width: 90%;
-    font-size: 1.5rem;
+    padding: 10px;
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .menu__subheader {
+    font-size: .75rem;
+  }
+
+  .menu__return-button-icon {
+    font-size: 1.3rem;
+    top: 4px
   }
 }

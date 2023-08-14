@@ -136,3 +136,9 @@
     font-size: 3rem;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .name {
+    font-size: 2.5rem;
+  }
+}
