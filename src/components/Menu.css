@@ -82,6 +82,8 @@
   border-radius: 50%;
   max-width: 200px;
   min-width: 80px;
+  max-height: 200px;
+  min-height: 80px;
   object-fit: cover;
   flex: 1 1 200px;
 }
@@ -91,7 +93,7 @@
 }
 
 .menu__greeting {
-  flex: 3 2 700px;
+  flex: 0 2 800px;
   max-width: 1000px;
 }
 

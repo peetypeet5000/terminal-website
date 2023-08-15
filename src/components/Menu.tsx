@@ -13,7 +13,7 @@ export default function Menu() {
             using the buttons below!
           </p>
         </div>
-        <img src='./chicago.jpg' alt="Me sitting on a dock in Chicago"></img>
+        <img src='./chicago.jpg' alt="Me sitting on a dock in Chicago" height="200px"></img>
       </div>
       
       <Link className="menu__button" to="/resume">
