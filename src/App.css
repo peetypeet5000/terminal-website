@@ -16,9 +16,8 @@ body {
   left: 0;
   z-index: -1;
   filter: blur(5px);
-  animation: fadeInAnimation ease-out 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  opacity: 0;
+  transition: opacity 2s ease-in;
 }
 
 .about {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import Name from "./components/Name";
 import "./components/Menu.css";
@@ -8,10 +8,12 @@ export default function App() {
   const location = useLocation();
   const [scanlines, setScanlines] = useState(true);
   const [background, setBackground] = useState(true);
+  const [backgroundLoaded, setBackgroundLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement|null>(null);
 
   return (
     <div className={scanlines ? "crt" : ""}>
-      <video autoPlay muted loop={background} playsInline id="background-vid">
+      <video autoPlay muted loop ref={videoRef} style={{opacity: backgroundLoaded? "1" :"0"}} onCanPlay={() => setBackgroundLoaded(true)} playsInline id="background-vid">
         <source src="./compressed_bkg.mp4" type="video/mp4" />
       </video>
       <Name text={">Peter LaMontagne"} />
@@ -52,20 +54,18 @@ export default function App() {
           <div className="terminal">
             <pre className="terminal__title">Accessibility</pre>
             <div className="terminal__selector">
-              <label htmlFor="scanlines">Toggle Scanline Effect</label>
+              <label htmlFor="scanlines">Enable Scanline Effect</label>
               <input id="scanlines" type="checkbox" checked={scanlines} onChange={e => setScanlines(e.target.checked)}></input>
             </div>
             <div className="terminal__selector">
-              <label htmlFor="background">Toggle Moving Background</label>
-              <input id="background" type="checkbox" checked={background} onChange={e => {
-                  setBackground(e.target.checked);
-                  const v = document.getElementById("background-vid");
-                  if(v instanceof  HTMLVideoElement) {
-                    if (e.target.checked == true) {
-                      v.play()
-                    } else {
-                      v.pause()
-                    }
+              <label htmlFor="background">Enable Moving Background</label>
+              <input id="background" type="checkbox" checked={background} onChange={() => {
+                  if (background) {
+                    videoRef.current?.pause();
+                    setBackground(false);
+                  } else {
+                    videoRef.current?.play();
+                    setBackground(true);
                   }
                 }}></input>
             </div>
