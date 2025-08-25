@@ -8,7 +8,7 @@ export default function Resume() {
         <div className="resume__element">
           <h1>Peter LaMontagne</h1>
           <p>
-            8995 Sw Sunstead Lane, Portland OR 97225 | peter@peterlamontagne.com
+            San Diego, CA | peter@peterlamontagne.com
             | (503) - 853 - 4419
           </p>
         </div>
@@ -17,9 +17,9 @@ export default function Resume() {
           <h2>Skills</h2>
           <p>
             <b>Programming Languages: </b>TypeScript, JavaScript, HTML, CSS,
-            C++, Python, and Java <br />
-            <b>Technologies: </b>Git/GitHub, Jenkins/CI,Docker, Linux, React,
-            Angular, Node.js, Express, Jest, Apache Kafka <br />
+            C++, Python, VBA, and Java <br />
+            <b>Technologies: </b>Git/GitHub, CI, Docker, Linux, React,
+            Angular, Node.js, .NET, Express, Jest, Apache Kafka <br />
             <b>Concepts: </b>REST APIs, Agile Development, Networking, Web
             Protocols, Databases, Testing
           </p>
@@ -49,6 +49,32 @@ export default function Resume() {
 
         <div className="resume__element">
           <h2>Experience</h2>
+          <div className="no-margin">
+            <h5>September 2023 – Present</h5>
+            <h4 className="no-margin">
+              Software Test Engineer | Solar Turbines
+            </h4>
+          </div>
+          <ul>
+            <li>
+              Generate and customize simulation in RSLogix Studio 5000 to verify software meets customer requirements. Performed extensive debugging to isolate complex issues
+            </li>
+            <li>
+              Consulted electrical loop schematics, process and instrumentation diagrams, and balance of plant documents in order to verify software correctness 
+            </li>
+            <li>
+              Collaborated with internal tools team to update tools in C# and VBA to reflect updated bushiness practices. Used knowledge of role and prior programming experience to efficiently solve problems
+            </li>
+            <li>
+              Conducted multi-day customer observed software tests and DCS tests
+            </li>
+            <li>
+              Drove process improvements by creating process verification checklists and 30+ testing instructions
+            </li>
+            <li>
+              Mentored new engineer and mentored 10+ field service representatives
+            </li>
+          </ul>
           <div className="no-margin">
             <h5>June 2021 – July 2023</h5>
             <h4 className="no-margin">

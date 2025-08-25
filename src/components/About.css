@@ -2,9 +2,10 @@
   color: #72147e;
 }
 
-.about__paragraph {
+.about p {
   flex: 0 1 auto;
   padding: 5px;
+  margin-top: 0;
 }
 
 .about__photo img {

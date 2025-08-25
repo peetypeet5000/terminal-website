@@ -5,7 +5,7 @@
 
 .menu__button {
   padding: 10px;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   color: black;
@@ -42,21 +42,26 @@
   width: fit-content;
   padding: .3rem;
   margin: 0;
+  text-decoration: none;
+  color: #404040;
 }
 
 .menu__return-button__small span {
-  padding: .3rem;
-  margin: 0;
-  color: black;
+  margin-right: .5rem;
+  vertical-align: text-bottom;
   font-size: 1.75rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.menu__return-button__small span:hover {
-  background-color: rgb(140, 26, 17);
+.menu__return-button__small:hover {
   color: rgb(191, 190, 190);
+  background-color: rgb(140, 26, 17);
   transition: 0.1s;
+}
+
+.menu__return-button__small span:hover  {
+  color: rgb(191, 190, 190);
 }
 
 .menu__button:hover {

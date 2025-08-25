@@ -8,9 +8,9 @@ export default function Menu() {
       <div className="menu__info">
         <div className="menu__greeting">
           <h2>Hi there!</h2>
-          <p>My name is Peter and I am a Full Stack Web Developer. I love building new systems 
-            that empower developers and users to do their best work. Explore some of the stuff I have done 
-            using the buttons below!
+          <p>My name is Peter and I am currently working on control systems for turbomachinery products. I am looking for oppertunities
+             that leverage my educational background in computer science and my previous experience as a full stack web developer. 
+             Explore some of the stuff I have done using the buttons below!
           </p>
         </div>
         <img src='./chicago.jpg' alt="Me sitting on a dock in Chicago" height="200px"></img>

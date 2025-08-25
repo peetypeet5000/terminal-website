@@ -36,6 +36,7 @@ export default function App() {
                 <span className="material-symbols-outlined">
                   arrow_back
                 </span>
+                Return
               </Link>
             )}
             <Outlet />
